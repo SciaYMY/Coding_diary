@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쪼랩 일기장</title>
+    <style>
+        #fastMenu{position: fixed; top: 0; right: 0; background: #ccc;}
+        #fastMenu ul{list-style: none;}
+        .box{
+            width: 1000px; border: 5px solid #ccc; padding: 20px; margin: 0 auto;
+        }
+        /* #box h2{
+            margin: 0;
+        } */
+        h3{
+            background: aqua;
+        }
+        .practice>li{
+            list-style-type: "\2192";
+        }
+        .subject{font-weight: 700}
+        .tag{
+            list-style-type: none; background: lightyellow;
+        }
+        .wai{
+            text-decoration: underline wavy orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>정리</h1> <hr>
+    <h2 id="html">HTML</h2>
+    <div class="box">
+        <h3>ex02</h3>
+            <ul>
+                <li><a href="01_Web_Standard/ex02/unit02_01.html" target="_black" title="제목요소, 문단요소">h요소 p, br</a> <br> h는 제목요소로 h1은 무조건 사용한다. <br>블록요소 </li>
+                <li><a href="01_Web_Standard/ex02/unit02_02.html" class="subject">Entity 코드</a>
+                    <br>특수문자
+                    <ul>
+                        <li><a href="https://entitycode.com/#common-content" target="_black">엔티티코드</a></li>
+                    </ul>
+                </li>
+                <li><b>텍스트요소</b>
+                    <ul>
+                        <li><a href="01_Web_Standard/ex02/unit03_01.html">abbr, strong, sub, sup, blockquote, 추가글, 삭제글</a></li>
+                        <li><a href="01_Web_Standard/ex02/unit03_02.html">mark, meter, progress, ruby + rt, detaile</a>
+                            <ul class="tag">
+                                <li>&lt;mark&gt;</li>
+                                <li>&lt;meter value="값"&gt; : 퍼센트의 바</li>
+                                <li>&lt;progress max="값" value="값"&gt; : 진행상태 바</li>
+                                <li>&lt;ruby&gt;漢子&lt;rt&gt;글자 주석&lt;/rt&gt;&lt;/rube&gt; : 글 위로 올라간다.</li>
+                                <li>&lt;detaile&gt;&lt;summary&gt;세부 항목&lt;/summary&gt;내용작성&lt;/detaile&gt;</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="01_Web_Standard/ex02/unit04_01.html" class="subject">목록 문단</a><br>비순서 목록(unordered list), 순서 목록(ordered list)</li>
+                <li><a href="01_Web_Standard/ex02/unit04_02.html" class="subject">정의 목록</a><br>설명 목록(description list), definition term, definition description
+                    <ul class="tag">
+                        <li>&lt;dl&gt;&lt;dt&gt;용어&lt;/dl&gt;&lt;dd&gt;설명&lt;/dd&gt;&lt;/dl&gt;</li>
+                    </ul>
+                </li>
+                <li><a href="01_Web_Standard/ex02/unit05_01.html" class="subject">시맨틱 요소</a>
+                    <br>Header, Navigation, Main, Section, Article, Aside, Footer
+                    <ul>
+                        <li><a href="01_Web_Standard/MY/sematic.html">의미</a></li>
+                        <li><a href="01_Web_Standard/ex02/unit05_02.html">마크업</a></li>
+                        <li><a href="01_Web_Standard/ex02/unit05_03.html">시맨틱 화면 구성</a></li>
+                            <ul class="practice">
+                                <li>&nbsp;<a href="01_Web_Standard/ex02/unit05_03_practice.html" target="_black">연습</a></li>
+                                <li>&nbsp;<a href="01_Web_Standard/ex02/unit05_04.html" target="_black">연습</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="01_Web_Standard/ex02/total1-1.html">ex02.total</a></li>
+            </ul>
+        <h3>ex03</h3>
+            <ul>
+                <li><a href="01_Web_Standard/ex03/unit01_01.html" class="subject">수평선, img 요소</a>
+                    <ul class="tag">
+                        <li>&lt;img src="경로" <span class="wai">alt="설명 대체 텍스트"</span>&gt; : 인라인요소</li>
+                    </ul>
+                </li>
+                <li><a href="01_Web_Standard/ex03/unit01_02.html" class="subject">이미지 캡션</a>
+                    <ul>
+                        <li>figure, figcaption, img
+                            <ul class="tag">
+                                <li>&lt;figure&gt;&lt;img&gt;&lt;figcaption&gt;캡션&lt;/figcaption&gt;&lt;/figure&gt;</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="01_Web_Standard/ex03/unit02_01.html" class="subject">audio 요소</a><br>autoplay controls
+                    <ul>
+                        <li>mp3
+                            <ul class="tag">
+                                <li>&lt;audio src="경로" autoplay controls&gt;&lt;/audio&gt;</li>
+                            </ul>
+                        </li>
+                        <li>옛날 : audio 안에 source 작성</li>
+                    </ul>
+                </li>
+                <li><a href="01_Web_Standard/ex03/unit02_02.html" class="subject">video 요소</a><br>muted autoplay controls
+                    <ul>
+                        <li>mp4
+                            <ul class="tag">
+                                <li>&lt;video src="경로" autoplay muted controls&gt;&lt;/video&gt;</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="01_Web_Standard/ex03/unit03_01.html" class="subject">a 요소</a><br>하이퍼링크
+                    <ul>
+                        <li>mailto : 메일 링크
+                            <ul class="tag">
+                                <li>&lt;a href="mailto:메일" title="클릭 전 표시 내용"&gt;</li>
+                            </ul>
+                        </li>
+                        <li><a href="01_Web_Standard/ex03/unit03_02.html" class="subject">네임앵커</a></li>
+                            <ul>
+                                <li># id 사용
+                                    <ul class="tag">
+                                        <li>&lt;a href="#id"&gt;</li>
+                                    </ul>
+                                </li>
+                                <li>#만 작성해도 맨 위로 이동</li>
+                            </ul>
+                    </ul>
+                </li>
+                <li><a href="01_Web_Standard/ex03/unit03_03.html" class="subject">이미지맵</a>
+                    <ul>
+                        <li class="tag">&lt;img src="경로" usemap="#이름"&gt; <br> &lt;map name="이름"&gt;&lt;area shape="모양" coords="좌표"&gt;&lt;/map&gt;</li>
+                        <li>모양 : rect circle poly</li>
+                        <li>좌표 입력(rect : 대각선, poly : 시계 방향)</li>
+                    </ul>
+                </li>
+                <li><b>iframe</b>
+                    <ul>
+                        <li>문서 본문에 액자처럼 삽입</li>
+                        <li><a href="01_Web_Standard/ex03/unit04_01.html">inline frame</a></li>
+                        <li><a href="01_Web_Standard/ex03/unit04_02.html">하이퍼링크 연결 iframe</a>
+                            <ul>
+                                <li>target="iframe name"</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="01_Web_Standard/ex03/total1.html">ex03.total</a></li>
+                <li><a href="01_Web_Standard/ex03/total2.html">ex03.tota2</a></li>
+            </ul>
+        <h3>ex04</h3>
+            <ul>
+                <li><a href="01_Web_Standard/ex04/unit01_01.html" class="subject">table</a>
+                    <ul>
+                        <li>row-column(행-열)</li>
+                        <li>table, tr, th, td</li>
+                            <ul>
+                                <li class="tag">&lt;th <span class="wai">scope="읽는 방향"</span>&gt;</li>
+                            </ul>
+                            <li><a href="01_Web_Standard/ex04/unit01_02.html">셀 병합</a> : rowspan, colspan <br> table{border-collapse: collapse}</li>
+                            <li><a href="01_Web_Standard/ex04/unit02_01.html">caption, colgroup</a>
+                                <ul class="tag">
+                                    <li>&lt;colgroup&gt;&lt;col span="개수" style="background:색깔"&gt;&lt;/col&gt;&lt;/colgroup&gt;</li>
+                                </ul>
+                            </li>
+                            <li><a href="01_Web_Standard/ex04/unit02_02.html">thead, tbody, tfoot</a></li>
+                            <li>연습
+                                <ul class="practice">
+                                    <li>&nbsp;<a href="01_Web_Standard/ex04/table1.html">Table1 (p.79)</a></li>
+                                    <li>&nbsp;<a href="01_Web_Standard/ex04/table2.html">Table2</a></li>
+                                    <li>&nbsp;<a href="01_Web_Standard/ex04/table3.html">객실 (p.83)</a></li>
+                                    <li>&nbsp;<a href="01_Web_Standard/ex04/table4.html">이력서</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                <li>&nbsp;<a href="01_Web_Standard/ex04/unit03_01.html" class="subject">form</a>
+                    <ul>
+                        <li class="tag">&lt;form action="서버 프로그램 URL" name="form 구분 이름" method="get / post"&gt;</li>
+                        <li>input 요소
+                            <ul>
+                                <li class="tag">&lt;input type="유형" name="이름"&gt;</li>
+                                <li>text : placeholder, required(필수 입력창), autofocus</li>
+                                <li>password</li>
+                                <li>email, tel</li>
+                                <li>date, time, month, week</li>
+                                <li>color</li>
+                                <li>number : value="초기값" , 스핀 박스로 counting</li>
+                                <li>search</li>
+                                <li>url</li>
+                                <li>range</li>
+                                <li>file</li>
+                                <li>disabled, readonly 속성</li>
+                                <li><a href="01_Web_Standard/ex04/unit03_02.html">raido, checkbox, label, title</a>
+                                    <ul class="tag">
+                                        <li>&lt;input type="-" name="그룹명" id="-"&gt; : checked</li>
+                                        <li>&lt;label for="id와 동일한 값"&gt;&lt;input type="-" id="label for와 동일한 값" <span class="wai">title="추가적인 설명"</span>&gt;</li>
+                                    </ul>
+                                </li>
+                                <li><a href="01_Web_Standard/ex04/unit03_03.html">예약 문의</a>
+                                    <ul>
+                                        <li>image : submit 버튼 대신 전송</li>
+                                        <li class="tag">&lt;input type="image" src="경로" alt="대체 텍스트" name="-"</li>
+                                        <li>submit, reset, button</li>
+                                        <li class="tag">&lt;input type="버튼" name="-" value="버튼 표시 내용"&gt;</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <li><a href="01_Web_Standard/ex04/unit04_01.html">fieldset, legend</a></li>
+                            <li><a href="01_Web_Standard/ex04/unit04_02.html">select, option, textarea</a>
+                                <ul>
+                                    <li class="tag">&lt;select name="-"&gt;&lt;option value="서버로 넘어가는 값"&gt;보여지는 내용&lt;/option&gt;&lt;/select&gt; : 드롭다운 목록</li>
+                                    <li class="tag">&lt;textarea name="-" id="-" cols="픽셀 단위 너비" rows="줄 개수"&gt;</li>
+                                </ul>
+                            </li>
+                            <li>연습
+                                <ul class="practice">
+                                    <li>&nbsp;<a href="01_Web_Standard/ex04/total1.html">한방쿨링샴푸</a></li>
+                                    <li>&nbsp;<a href="01_Web_Standard/ex04/total2.html">member login</a></li>
+                                    <li>&nbsp;<a href="01_Web_Standard/ex04/form.html">회원가입 (p.147)</a></li>
+                                    <li>&nbsp;<a href="01_Web_Standard/ex04/quiz.html">프론트엔드 개발자 지원서 (p.183)</a></li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h3><a href="01_Web_Standard/MY/elements level.html">Elements level</a> : Inline, Block</h3>
+        <h2 id="css">CSS</h2>
+        <div class="box">
+            <h3>ex05</h3>
+                <ul>
+                    <li><a href="01_Web_Standard/ex05/unit01_01.html">Inline styles</a></li>
+                    <li><a href="01_Web_Standard/ex05/unit01_02.html">Internal styleshhet</a></li>
+                    <li><a href="01_Web_Standard/ex05/unit02_01.html">배경, 글자 색상</a></li>
+                    <li><a href="01_Web_Standard/ex05/unit02_02.html">가로</a></li>
+                    <li><a href="01_Web_Standard/ex05/unit03_01.html">External stylesheet</a></li>
+                    <li><a href="01_Web_Standard/ex05/unit03_02.html">External stylesheet</a>
+                        <br>CSS 파일 : @import url(위치))
+                    </li>
+                    <li><a href="01_Web_Standard/ex05/unit04_01.html">border-radius</a>
+                        <ul>
+                            <li class="tag">border-radius: 곡률[px, %] (대각선, 시계방향)</li>
+                        </ul>
+                    </li>
+                    <li style="list-style: none">
+                        <dl>
+                            <dt><strong>※ Vendor Prefixes</strong></dt>
+                            <dd>-webkit-(Safari), -moz-(Firefox)</dd>
+                            <dd class="tag">{ -webkit-border-radius: 20px 10px 50px 0 }</dd>
+                        </dl>                        
+                    </li>
+                    <li><a href="01_Web_Standard/ex05/unit04_02.html">box-shadow</a>
+                        <ul>
+                            <li class="tag">box-shadow: x y blur spread color</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex05/total2.html">ex05.total2</a></li>
+                    <li><a href="01_Web_Standard/ex05/grouping.html">Grouping</a> : div, span</li>
+                </ul>
+            <h3>ex06</h3>
+                <ul>
+                    <li><a href="01_Web_Standard/ex06/unit01_01.html">Tag selector</a>
+                        <ul>
+                            <li><a href="01_Web_Standard/ex06/unit01_02.html">태그 선택자</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex06/unit02_01.html">Class selector</a>
+                        <ul>
+                            <li class="tag">border: width style color</li>
+                            <li class="tag">box-sizing: border-box</li>
+                            <li><a href="01_Web_Standard/ex06/unit02_02.html">클래스 선택자</a></li>
+                            <li class="tag"> font-weight: value</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex06/unit03_01.html">Id selector</a>
+                        <ul>
+                            <li class="tag">{ box-shadow: 10px 8px 3px green, -10px -10px 10px orange }</li>
+                            <li><a href="01_Web_Standard/ex06/unit03_02.html">클래스 선택자</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex06/unit04_01.html" class="subject">속성 선택자</a>
+                        <ul>
+                            <li class="tag">태그[속성]{스타일}</li>
+                            <li style="text-decoration: none">a[title]{ }</li>
+                            <li><a href="01_Web_Standard/ex06/unit04_02.html">일치하는 요소</a></li>
+                            <li> = 일치 ,  ^= 시작 ,  $= 끝</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex06/unit05_01.html">Child selector</a></li>
+                    <li><a href="01_Web_Standard/ex06/unit05_02.html">Adjacent selector</a></li>
+                    <li><a href="01_Web_Standard/ex06/unit06_01.html" class="subject">Pseudo class</a>
+                        <ul>
+                            <ul>
+                                <li>:link : 방문하지 않은 링크</li>
+                                <li>:visited : 방문한 링크</li>
+                                <li>:hover</li>
+                                <li>:active : 웹 요소 활성화(누르고 있을 때)</li>
+                            </ul>
+                            <li><a href="01_Web_Standard/ex06/unit06_02.html">동적 가상 클래스</a>
+                                <ul>
+                                    <li>:focus : 필드 안 마우스 커서(Tab focus 이동)</li>
+                                </ul>
+                            </li>
+                            <li><a href="01_Web_Standard/ex06/unit07_01.html">구조 가상 클래스</a>
+                                <ul>
+                                    <li>:first-child</li>
+                                    <li>:<i>n</i>th-child(<i>n</i>) : n -> 숫자, even, odd</li>
+                                    <li>:last-child</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex06/unit07_02.html" class="subject">Pseudo elemnet</a>
+                        <ul>
+                            <ul>
+                                <li>::first-letter</li>
+                                <li>::first-line</li>
+                                <li>::selection : 드래그 시, 활성화</li>
+                            </ul>
+                            <li><a href="01_Web_Standard/ex06/unit07_03.html">내용 추가</a>
+                                <ul>
+                                    <li>::before</li>
+                                    <li>::after</li>
+                                </ul>
+                                <ul class="practice">
+                                    <li>&nbsp;h1요소 밑줄 긋기</li>
+                                </ul>
+                            </li>    
+                        </ul>                        
+                    </li>
+                    <li><a href="01_Web_Standard/ex06/unit08_01.html">Universal selector</a></li>
+                    <li><a href="01_Web_Standard/ex06/unit08_02.html">Grouping selector</a></li>
+                    <li><a href="01_Web_Standard/ex06/unit09_01.html">하위 /후손/자손 선택자, 자식 선택자</a></li>
+                    <li><a href="01_Web_Standard/ex06/unit10_01.html">속성 값의 상속</a></li>
+                    <li><a href="01_Web_Standard/ex06/unit10_02.html" class="subject">우선 순위</a><br>!important > id > class > tag</li>
+                    <ul class="practice">
+                        <li>&nbsp;<a href="01_Web_Standard/ex06/total1.html">ex06.total1</a></li>
+                        <li>&nbsp;<a href="01_Web_Standard/ex06/total1_answer.html">ex06.total1_Answer</a><br><span class="tag">*{margin: 0; padding: 0} >> 여백 초기화</span></li>
+                        <li>&nbsp;<a href="01_Web_Standard/ex06/total2.html">ex06.total2</a></li>
+                    </ul>
+                </ul>
+            <h3>ex07</h3>
+                <ul>
+                    <li><a href="01_Web_Standard/ex07/unit01_01.html" class="subject">글자</a>
+                        <ul>
+                            <li>font-family: 글꼴 >> inherit</li>
+                            <li><a href="https://fonts.google.com/">구글 웹 폰트</a> : @import</li>
+                            <li>font-weight</li>
+                            <li>font-size</li>
+                            <li>color</li>
+                            <li>font-style: italic</li>
+                            <li>font-variant: small-caps (작은 대문자)</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit01_02.html" class="subject">문단</a>
+                        <ul>
+                            <li>text-align: center, justfy</li>
+                            <li>word-spacing: 단어 간격</li>
+                            <li>letter-spacing: 자간 (글자 사이 간격)</li>
+                            <li>line-height: (행간)</li>
+                            <li>text-transform: capitalize, uppercase, lowercase</li>
+                            <li>text-decoration: line style color
+                                <ul>
+                                    <li>line : underline, overline, line-through</li>
+                                </ul>
+                            </li>
+                            <li>text-indent</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit01_03.html" class="subject">문단 흐름, 공백 처리</a>
+                        <ul>
+                            <li>direction: rtl</li>
+                            <li>white-space: nowrap
+                                <ul>
+                                    <li>글자 안 보이게 처리</li>
+                                    <li class="tag">white-space: nowrap; width: 값; tex-overflow: ellipsis; overflow: hidden;</li>
+                                </ul>
+                            </li>
+                            <li>white-space: pre</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit02_01.html" class="subject">목록</a>
+                        <ul>
+                            <li>list-style-image: url(경로)</li>
+                            <li>list-style : disc, circle, square, none</li>
+                            <li>list-style : decimal-leading-zero, lower-alpha, upper-alpha, lower-greek, lower-roman</li>
+                            <li>list-style-position: inside</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit02_02.html" class="subject">인용부호, 숫자 매기기</a>
+                        <ul>
+                            <li>content: open-quote</li>
+                            <li>content: close-quote</li>
+                            <li>p:before{counter-increment: 이름; content: counter(이름, upper-roman);}</li>
+                            <li>quotes: "&laquo;""&raquo;" "[""]" (바깥 / 안)</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit03_01.html">여백 처리</a>
+                        <ul>
+                            <li>글자 중앙 : 글자 상위 block 요소에 <span class="tag">{text-align: center}</span></li>
+                            <li>상자 중앙 : <span class="tag">{width: 값; margin: px auto}</span></li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit03_02.html" class="subject">테두리</a>
+                        <ul>
+                            <li>border: none</li>
+                            <li>border : solid, double, dashed</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit03_03.html">모서리가 둥근 테두리</a></li>
+                    <li><a href="01_Web_Standard/ex07/unit03_04.html" class="subject">테두리 외곽</a>
+                        <ul>
+                            <li class="tag">outline: width style color</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit04_01.html" class="subject">배경</a>
+                        <ul>
+                            <li class="tag">background: color image repeat attachment position</li>
+                            <li>{background : url("경로") no-repeat left bottom}</li>
+                            <li>background-repeat : no-repeat, repeat-x, repeat-y</li>
+                            <li>background-attachment : fixed</li>
+                            <li>background-position : 수평 수직 (100% 0, left bottom)</li>
+                            <li>vh : viewport hieght</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit05_01.html" class="subject">투명도</a>
+                        <ul>
+                            <li class="tag">{margin: 0 auto} >> box 중간 정렬</li>
+                            <li>opacity : 0 ~ 1</li>
+                            <li>hsla(각도, %, %, 0~1) : Hue, Saturation, Lightness</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/unit05_02.html">그림자 효과</a></li>
+                    <li><a href="01_Web_Standard/ex07/unit06_01.html">테이블</a></li>
+                    <li><a href="01_Web_Standard/ex07/bg.html" class="subject">배경 이미지</a>
+                        <ul>
+                            <li>center/100% fixed  : 화면 배경 고정 및 꽉 채우기<br><span class="tag">background: position/size</span></li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/border.html" class="subject">Border</a>
+                        <ul>
+                            <li>border-style : none, solid, dotted, dashed, double, groove, ridge, inset, outset</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex07/total1.html">total1</a>
+                        <ul>
+                            <li>dt:before{content:"Q... "}</li>
+                            <li>dd:before{content:"A... "}</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex08</h3>
+                <ul>
+                    <li><a href="01_Web_Standard/ex08/unit01_01.html">float</a> : right, left</li>
+                    <li><a href="01_Web_Standard/ex08/unit01_02.html">clear</a> : right, left, both</li>
+                    <li><a href="01_Web_Standard/ex08/unit02_01.html" class="subject">position</a>
+                        <ul>
+                            <li>position : absolute, relative, fixed, sticky</li>
+                            <li>top/bottom : px, left/right : px</li>
+                            <li class="tag">{position: absolute; top: 50%; right: 50%; transform: translate(-50%, -50%)} >> 중앙 위치</li>
+                            <li>z-index : Num (높은 수가 위)</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit02_02.html">상대 좌표 배치</a>
+                        <ul>
+                            <li>부모 position: relative, 자식 position: absolute</li>
+                            <li class="tag">li.liStyle:after{content: "  |  "; white-space: pre} : 메뉴바 기호 넣기</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit02_03.html">고정 좌표 배치</a></li>
+                    <li><a href="01_Web_Standard/ex08/unit02_04.html">sticky</a></li>
+                    <li><a href="01_Web_Standard/ex08/unit03_01.html">이미지 세로 배치</a>
+                        <ul>
+                            <li>display: block;</li>
+                            <li>img{border: groove 3px #999; padding: 5px; background: #fff} : 액자 효과</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit03_02.html">목록 가로 배치</a>
+                        <ul>
+                            <li>#menu{text-align: center} li{display: inlne}</li>
+                            <li>div #menu{width: 500px; overflow: hidden; margin: 0 auto} li{float: left}</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit03_03.html">이미지 대체 제목</a>
+                        <ul>
+                            <li>h1{width: 100%; height: 그림높이; background: url(경로) no-repeat 50% 0}</li>
+                            <li>h1 span{display: none} h1:hover span{display: block} : 마우스 올리면 글자 보이기</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit03_04.html" class="subject">표</a>
+                        <ul>
+                            <li>display : table, table-cell</li>
+                            <li>border-spacing : 가로 세로</li>
+                            <li>ul{display: table; border-spacing: 3px}</li>
+                            <li>vertical-align: middle</li>
+                            <li>dd{line-height: 150%; text-align: justify}</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit04_01.html" class="subject">다단</a>
+                        <ul>
+                            <li>column-count: 숫자</li>
+                            <li>column-rule: width style color</li>
+                            <li>column-gap: 40px</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit05_01.html" class="subject">변형</a>
+                        <ul>
+                            <li>transform : rotate(deg), scale(x, y), translate(x, y), skew(deg)</li>
+                            <li>{transform: translateX(50px)}</li>
+                            <li>transform-origin: x y z (중심)</li>
+                            <li>transform : perspective(축 값 px)</li>
+                            <li>transition: property duration timing-function delay</li>
+                            <li>{transition: 0.5s ease-in}</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit05_02.html">글자 숨기기</a>
+                        <ul>
+                            <li>#book{width: 172px; overflow: hidden; transition: .5s ease-in} <br>#book:hover{width: 700px}</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit05_03.html" class="subject">애니메이션</a>
+                        <ul>
+                            <li>animation-name : 이름</li>
+                            <li>animation-duration : s</li>
+                            <li>animation-iteration-count : infinite</li>
+                            <li>animation-timing-function : linear, ease, ease-in, eases-out</li>
+                            <li>animation-direction : alternate (거꾸로 돌아감)</li>
+                            <li>키프레임 : 애니메이션 중간에 스타일이 바뀌는 지점</li>
+                            <li>@keyframes 이름{위치{스타일}}</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex08/unit05_04.html">Animation</a>
+                        <ul>
+                            <li>animation: name <b>duration</b> timing-function delay iteration-count direction</li>
+                            <li>.box{animation: rotate 1.5s infinite, backgrounds 1.5s infinite alternate}</li>
+                        </ul>
+                    </li>
+                    <li>연습
+                        <ul class="practice">
+                            <li>&nbsp;<a href="01_web_Standard/ex08/total1.html">갤럭시 노트</a>
+                                <ul>
+                                    <li style="list-style:none"><strong>※ IR 효과 (Image Replacement)</strong>
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>Screen Out</dt>
+                                                    <dd>.ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px}</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>min-width, min-height</li>
+                                    <li>display: inline-block</li>
+                                </ul>
+                            </li>
+                            <li>&nbsp;<a href="01_web_Standard/ex08/total1_copy.html">갤럭시 노트_연습</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex09</h3>
+                <ul>
+                    <li><a href="01_Web_Standard/ex09/unit01_01.html" class="subject">그라데이션</a>
+                        <ul>
+                            <li><a href="https://www.colorzilla.com/gradient-editor/">ColorZilla</a> 사용</li>
+                            <li>linear-gradient(방향끝지점, 시작색상, 중간색상 위치, 끝색상)</li>
+                            <li>radial-gradient(circle 크기 at 중심, 중간색상, 바깥색상)<br>radial-gradient(중심, circle, 중간색상, 바깥색상)</li>
+                            <li>브라우저 접두사마다 방향 유의</li>
+                            <li>linear-gradient(to right, white 0%, yellow 50%, orange 100%)</li>
+                            <li>radial-gradient(30% 40%, circle closest-side, white, yellow, green</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex09/unit01_02.html">메뉴바</a>
+                        <ul>
+                            <li>ul{text-align: center} li{display: <strong>inline-block</strong>} a{text-transform: uppercase} a:after{content: "/"}</li>
+                        </ul>
+                    </li>
+                    <li>Rollover
+                        <ul>
+                            <li><a href="01_Web_Standard/ex09/unit02_01.html">투명도 롤오버</a>
+                                <ul>
+                                    <li>ul{<strong>overflow: hidden</strong>} li{<strong>position: relative</strong>} img{opacity: .5} span{display: block; <strong>position: absolute; top: -50px; left: 0;</strong> transiton: .3s} li:hover span{top: 0} li:hover img{opacity: 1}</li>
+                                    <li>Down 롤오버</li>
+                                    <li><a href="01_Web_Standard/ex09/unit02_01 copy.html">Up 롤오버</a> : {position: absolute; bottom: -51px; left: 0}
+                                        <ul class="practice">
+                                            <li><a href="01_Web_Standard/ex09/unit02_01_test.html">연습</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="01_Web_Standard/ex09/unit02_02.html">확대 롤오버</a> : img{width: 100px; height: 100px; transition: all .3s; position: relative; z-index: 2} li:hover img{width: 300px; height: 300px; z-index: 3}</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex09/unit03_01.html">탭구조</a> : .avtive 사용</li>
+                    <li><a href="01_Web_Standard/ex09/unit04_01.html">롤오버시 블러 효과</a>
+                        <ul>
+                            <li>li:hover img{box-shadow: 0 0 50px #0c0}</li>
+                            <li><strong>:not()</strong> : li:not(:last-child){margin}</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex09/unit04_02.html">웹 스티커</a></li>
+                    <li><a href="01_Web_Standard/ex09/unit05_01.html">Member Login</a></li>
+                    <li><a href="01_Web_Standard/ex09/unit06_01.html">테이블의 세로바</a>
+                        <ul>
+                            <li>th span{display: block; border-right: 1px solid #939393}</li>
+                            <li>th input{cursor: pointer}</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex09/unit07_01.html"><strong>반응형</strong></a>
+                        <ul>
+                            <li class="tag">@media only screen and (조건문) and ( ) {실행문}</li>
+                            <li>@media screen and (min-width: 1025px) {h1{background: url(./images.png) no-repeat center top; height: 700px} .btn(border-radius: 15px; padding: 10px 20px; font-size: 2em;)} <br> @media screen and (min-width: 800px) and (max-width: 1024px) {h1{background: url(./images.png) no-repeat center top; height: 512px} .btn(border-radius: 10px; padding: 10px 20px; font-size: 2em;)}</li>
+                        </ul>
+                    </li>
+                    <li><a href="01_Web_Standard/ex09/unit07_02.html">Media Queries</a>
+                        <ul>
+                            <li>PC : 1280px, 1024px</li>
+                            <li>노트북 : 960px, 768px, 600px</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex 01 Div Coding</h3>
+                <ul>
+                    <li><a href="02_HTML5_CSS3/ex_01_Div_Coding/index.html">Div Box 구조</a>
+                        <ul>
+                            <li>#wrap > header, section(content), footer</li>
+                            <li><a href="02_HTML5_CSS3/ex_01_Div_Coding/index1.html">연습</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML5_CSS3/ex_01_Div_Coding/index2.html">사각형 나누기</a></li>
+                </ul>
+            <h3>ex 02 Div Grid</h3>
+                <ul>
+                    <li><a href="02_HTML5_CSS3/ex_02_Div_Grid/index.html">Ashram CAFE</a>
+                        <ul>
+                            <li>onmouseover, onmouseout</li>
+                            <li>&lt;img src="button1.gif" alt="home" onmouseover="this.src-'button2.gif" onmouseout="this.src-'button1.gif"&gt;</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex 03 em rem vw vh</h3>
+                <ul>
+                    <li><a href="02_HTML5_CSS3/ex_03_em_rem_vw_vh/index.html"><strong>단위</strong></a>
+                        <ul>
+                            <li>em : 부모기준, rem : 기본값 root 기준</li>
+                            <li>:root{font-size: 18px}; .wrp{font-size: 10px}</li>
+                            <li>.box_em{width: 10em; height: 10em} &nbsp; >> 100px</li>
+                            <li>.box_rem{width: 10rem; height: 10rem} &nbsp; >> 180px</li>
+                            <li>vh : 화면 크기만큼의 높이</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex 04 Display</h3>
+                <ul>
+                    <li><a href="02_HTML5_CSS3/ex_04_Display/display_속성.html">Display 속성</a></li>
+                    <li><a href="02_HTML5_CSS3/ex_04_Display/boxsizing.html">Boxsizing</a>
+                        <ul>
+                            <li>box-sizing: border-box</li>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML5_CSS3/ex_04_Display/visible.html"><strong>Visibility</strong></a>
+                        <ul>
+                            <li>visibility : hidden, visible</li>
+                            <li>opacity: 0 → .5</li>
+                            <li>display : none, block</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex 05 Position</h3>
+                <ul>
+                    <li><a href="02_HTML5_CSS3/ex_05_Position/position_속성.html">Position 속성</a></li>
+                    <li><a href="02_HTML5_CSS3/ex_05_Position/index.html">Position 속성</a></li>
+                    <li><a href="02_HTML5_CSS3/ex_05_Position/index1.html">Position</a>
+                        <ul>
+                            <li>overflow-y: scroll</li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+        <h2 id="my">MY</h2>
+            <ul>
+                <li><a href="01_Web_Standard/MY/site.html">Site</a></li>
+                <li><a href="01_Web_Standard/MY/standard style.html">Standard style</a></li>
+                <li><a href="https://sciaymy.github.io/coding_yah/">My Git</a></li>
+            </ul>
+        <div id="fastMenu">
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#my">MY</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
