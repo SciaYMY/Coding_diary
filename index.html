@@ -570,9 +570,14 @@
                             <li>radial-gradient(circle 크기 at 중심, 중간색상, 바깥색상)<br>radial-gradient(중심, circle, 중간색상, 바깥색상)</li>
                             <li>브라우저 접두사마다 방향 유의</li>
                             <li>linear-gradient(to right, white 0%, yellow 50%, orange 100%)</li>
+                            <ul class="practice">
+                                <li>&nbsp;<a href="01_Web_Standard/ex09/total1_test.html">Sugar Free Shopping Mall</a></li>
+                                <li>&nbsp;<a href="01_Web_Standard/ex09/total1.html">total1</a></li>
+                            </ul>
                             <li>radial-gradient(30% 40%, circle closest-side, white, yellow, green</li>
                         </ul>
                     </li>
+
                     <li><a href="01_Web_Standard/ex09/unit01_02.html">메뉴바</a>
                         <ul>
                             <li>ul{text-align: center} li{display: <strong>inline-block</strong>} a{text-transform: uppercase} a:after{content: "/"}</li>
@@ -619,6 +624,11 @@
                         <ul>
                             <li>PC : 1280px, 1024px</li>
                             <li>노트북 : 960px, 768px, 600px</li>
+                            <li style="list-style: none">
+                                <ul class='practice'>
+                                    <li>&nbsp;<a href="01_Web_Standard/ex09/total2.html">Sugar Free Shopping Mall</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -679,21 +689,197 @@
                         </ul>
                     </li>
                 </ul>
+            <h3>ex 06 Clear Fix</h3>
+                <ul>
+                    <li><a href="02_HTML5_CSS3/ex_06_Clear_Fix/index.html">float 대응</a>
+                        <ul>
+                            <li><a href="02_HTML5_CSS3/ex_06_Clear_Fix/index1.html">부모 float</a></li>
+                            <li><a href="02_HTML5_CSS3/ex_06_Clear_Fix/index2.html">overflow</a>: hidden</li>
+                            <li><a href="02_HTML5_CSS3/ex_06_Clear_Fix/index3.html">clearfix</a>
+                                <ul>
+                                    <li class="tag">.clearfix:after{content: ""; display: block; clear: both)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex 08 Menu Border</h3>
+                <ul>
+                    <li>list-style: none</li>
+                    <li>ul li:hover a{색 변화}</li>
+                    <li><a href="02_HTML5_CSS3/ex_08_Menu_Border/index.html">가로 메뉴</a>
+                        <ul>
+                            <li>ul{overflow: hidden} li{float: left}</li>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML5_CSS3/ex_08_Menu_Border/index1.html">세로 메뉴</a></li>
+                </ul>
+            <h3>ex 09 Horizontal Vertical</h3>
+                <ul>
+                    <li><a href="02_HTML5_CSS3/ex_09_horizontal_vertical/index.html">수평, 수직 정렬</a></li>
+                    <li><a href="02_HTML5_CSS3/ex_09_horizontal_vertical/index1.html">인라인 가운데 보내기</a>
+                        <ul>
+                            <li>부모요소{text-align: center}</li>
+                            <li><a href="02_HTML5_CSS3/ex_09_horizontal_vertical/index2.html">인라인 가운데 보내기</a>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML5_CSS3/ex_09_horizontal_vertical/index8.html">세로 메뉴</a></li>
+                        <ul>
+                            <li>부모요소{text-align: center}</li>
+                        </ul>
+                    </li>
+                </ul>
 
 
-        <h2 id="my">MY</h2>
-            <ul>
-                <li><a href="01_Web_Standard/MY/site.html">Site</a></li>
-                <li><a href="01_Web_Standard/MY/standard style.html">Standard style</a></li>
-                <li><a href="https://sciaymy.github.io/coding_yah/">My Git</a></li>
-            </ul>
+        </div>
+        <h2 id="JS">Java Script</h2>
+        <div class="box">
+            <h3>01 javascrip란</h3>
+                <ul>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/01_javascript란/javascript.html">javascript 설명</a></li>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/01_javascript란/index.html">맛보기</a>
+                        <ul>
+                            <li>&lt;![CDATA[ &nbsp; ]]&gt; (내부 script 주석처리) : 잘못 인식 방식</li>
+                            <li>console.log( ); : Console 창에 표시</li>
+                            <li> script
+                                <ul>
+                                    <li> head > script 로 작성</li>
+                                    <li> 외부 script 작성 &lt;script src="경로" &gt;&lt;/script&gt;</li>
+                                    <li> body > script 로 작성</li>
+                                </ul>
+                            </li>
+                            <li>document.write( ); : 브라우저에 표시</li>
+                            <li>escape : | (백슬래쉬)</li>
+                            <li>prompt( ); : 묻고 답하기</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>02 콘솔에 출력, async와 defer 차이점</h3>
+                <ul>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/02_콘솔에 출력, async와 defer차이점/index.html">스크립트 속성 & 사이트</a>
+                        <ul>
+                            <li>&lt;script 속성 src="main.js"&gt;</script><br>async, defer</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>03 변수와 상수, 호이스팅 유효범위</h3>
+                <ul>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/03_변수와상수_호이스팅_유효범위/variable.html">Variable, Constant, Hoisting</a></li>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/03_변수와상수_호이스팅_유효범위/var.html">예시</a></li>
+                    <li>Variables
+                        <ul>
+                            <li>var 이름 = 값</li>
+                            <li>var 이름 = Number("값") : 숫자형 데이터 타입으로 변환</li>
+                            <li>var k = Boolean( ) >> false : 공백(""), 0</li>
+                        </ul>
+                    </li>
+                    <li>null : 데이터를 비움</li>
+                    <li>Data type : String, Number, Boolean
+                        <ul>
+                            <li>확인 : typeof<br>console.log(typeof 이름)</li>
+                        </ul>
+                    </li>
+                    <li>Hoisting : 선언만 끌어올린다.</li>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/03_변수와상수_호이스팅_유효범위/01_let, const와 블록 레벨 스코프/index.html">ES6</a></li>
+                    <li>'use strict'</li>
+                    <li>ECMAScript
+                        <ul>
+                            <li>ES5 - var (variable) : 변경되는 값 rw(read/write)
+                                <ul>
+                                    <li>function scope : 전역변수, 지역변수</li>
+                                </ul>
+                            </li>
+                            <li>ES6 - let, const
+                                <ul>
+                                    <li>let 이름 = 값</li>
+                                    <li>const - r(read only) 읽기만 가능 한 번 할당하면 변하지 않는 값</li>
+                                    <li>Block scope</li>
+                                    <li>symbol : 우선 순위를 주고 싶을 떄, 고유한 식별자가 필요할 때</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Backtick(`) : 있는 그대로 보여줌
+                        <ul>
+                            <li>console.log("value: " +변수+ ", type: " +typeof 변수)</li>
+                            <li>console.log(`value: ${변수}, type: ${typeof 변수}`)</li>
+                        </ul>
+                    </li>
+                    <li>null, undefined</li>
+                </ul>
+            <h3>04 자료형, 연산자, 조건문</h3>
+                <ul>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/operator.html">Data Type, Operators, If</a></li>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/numbericOper.html">Operator</a>
+                        <ul>
+                            <li>+ (add), - (substract), / (divide), * (multiply), % (remainder), ** (exponentiation)</li>
+                            <li>Logical operators : ||(or) &&(and) !(not)</li>
+                            <li>Ternary operators : let 변수 = 조건 ? 참 실행문 : 거짓 실행문</li>
+                            <li>연습
+                                <ul class='practice'>
+                                    <li>&nbsp;<a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/mission.html">Mission 하루 지출 내역 (p.58)</a></li>
+                                    <li>&nbsp;<a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/mission00.html">Mission00 소개팅</a></li>
+                                    <li>&nbsp;<a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/mission01.html">Mission01 과목 평균</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/if.html">if</a>
+                        <ul>
+                            <li>if, else, else if, 중첩 if 문</li>
+                            <li>if(조건){true 실행문} else {false 실행문}
+                                <ul class="practice">
+                                    <li>&nbsp;<a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/ex2.html">예제</a></li>
+                                </ul>
+                            </li>
+                            <li>confirm() : 확인/취소 창 >> [확인] true, [취소] false</li>
+                            <li>locatioin.reload(); : 브라우저 새로 고침</li>
+                        </ul>
+                    </li>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/swich.html">swich</a>
+                        <ul>
+                            <li>swich(변수){<br>&nbsp;case 값 : 실행문; break;<br>&nbsp;case 값 : 실행문; break;<br>&nbsp;default : 실행문}</li>
+                        </ul>
+                    </li>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/loop.html">loop</a>
+                        <ul>
+                            <li>while(조건문){실행문; 증감식;}</li>
+                            <li>do{실행문; 증감식;}while(조건문)</li>
+                            <li>for(시작값, 조건문, 증감식){실행문}
+                                <ul>
+                                    <li>for(조건){배열변수[i]}</li>
+                                    <li>배열변수.forEach(function(item, index){배열변수[index]})</li>
+                                    <li>배열변수.forEach(function(item, index){item})</li>
+                                    <li>for(item of 배열변수){item}</li>
+                                    <li>for(x in 객체변수){x + 객체변수[x]}}</li>
+                                </ul>
+                            </li>
+                            <li>break, continue</li>
+                            <li>중첩 for 문</li>
+                            <li style="list-style:none">&nbsp;</li>
+                            <li>.innerHTML : HTML으로 작성</li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/colorbg.html">bg</a></li>
+                    <li><a href="../03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/for.html">for</a></li>
+                </ul>
+
+    
+            <h2 id="my">MY</h2>
+                <ul>
+                    <li><a href="01_Web_Standard/MY/site.html">Site</a></li>
+                    <li><a href="01_Web_Standard/MY/standard style.html">Standard style</a></li>
+                    <li><a href="https://sciaymy.github.io/coding_yah/">My Git</a></li>
+                </ul>
+        </div>
         <div id="fastMenu">
             <ul>
                 <li><a href="#html">HTML</a></li>
                 <li><a href="#css">CSS</a></li>
+                <li><a href="#JS">JS</a></li>
                 <li><a href="#my">MY</a></li>
             </ul>
         </div>
-    </div>
 </body>
 </html>
