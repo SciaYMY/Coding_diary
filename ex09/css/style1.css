@@ -1,0 +1,12 @@
+*{margin: 0; padding: 0;}
+body{font: 1.2em verdana, sans-serif;
+    margin-top: 30px; background: khaki;
+}
+h1{text-align: center; padding-bottom: 20px; font-size: 2em; color: #fff; font-style: italic; text-shadow: 7px 7px 7px #000;}
+#photoBox{width: 330px; margin: 0 auto;}
+#photoBox #tabNavi{overflow: hidden; list-style: none; padding-left: 100px;}
+#photoBox #tabNavi li{float: left;}
+#photoBox #tabNavi li a{text-decoration: none; color: #f96; background: #fff; padding: 3px 10px; border-top-left-radius: 10px; border-top-right-radius: 10px; width: 50px; display: block; text-align: center;}
+#photoBox #photo{border: 5px solid #f63; border-radius: 15px; background: #fff; text-align: center;}
+#photoBox #tabNavi li.activeS a{background: #f63; color: #fff;}
+#photoBox #tabNavi li:hover a{background: #f63; color: #fff;}
