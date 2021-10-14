@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    
+    <script>
+        /* var tag="<h1>string</h1>";
+        document.write(tag);
+
+        var t=Number("500");
+        
+
+        var s=true;
+        var t=10>=100; //false
+        var k=Boolean("hello"); //true
+        var k=Boolean(""); //false
+        var k=Boolean(0); //false
+  
+
+        var a=true;
+        console.log(a);
+        var b=false;
+        console.log(b);
+        var c=10>5;
+        console.log(c);
+        var d=Boolean("");
+        console.log(d);
+       
+        
+        var num=100;
+        var str=Boolean(null);
+        console.log(typeof str)
+       
+
+        function hello1(){
+            console.log('hello1');
+        }
+        hello1();
+        hello2();
+        function hello2(){
+            console.log('hello2')
+        } */
+
+/* 
+        age=6;
+        age++;
+        console.log(age);
+        let age;
+ */
+        console.log(name);
+        name='Mark'
+        var name;
+
+    </script>
+     
+      
+    <script src="./js/var.js"></script>
+</head>
+<body>
+    <h1>Variables</h1>
+    <h2>ES5</h2>
+    <h3>var (variable)</h3>
+    <p>변경되는 값 rw(read/write)</p>
+    <h4>현 개발에서 var를 사용하지 않는 이유</h4>
+    <ul>
+        <li>var 호이스팅이 일어남. 어디에 선언했는지 상관없이 맨 상단으로 끌어올려 주는 행위를 함</li>
+        <li>대부분은 프로그램 언어에서는 변수를 선언하고 그 값을 할당하는 것이 정상적임</li>
+        <li>자바스크립트 var에서는 선언도 하기 전에 값을 할당하고 심지어 값을 할당하기 전에 출력도 할 수 있음</li>
+        <li>값이 정의되지 않으면 undefined가 나오는데 변수는 정의되어 있지만 값이 할당되지 않았을 때 나타남</li>
+    </ul>
+    <h3>function scope</h3>
+    <ul>
+        <li>전역변수 : 함수 외부에서 선언한 변수</li>
+        <li>지역변수 : 함수 내부에서 선언한 변수</li>
+    </ul>
+
+    <h2>ES6</h2>
+    <h3>let -Mutable(변경)</h3>
+    <h3>const -Immutable(변경불가)</h3>
+    <p>r(read only) 읽기만 가능 한 번 할당하면 변하지 않는 값</p>
+    <ul>
+        <li>왠만하면 값이 할당된 후 변경되지 않을 값에 사용</li>
+        <li>보안상 다른 해커가 값을 변경하는 것을 막을 수 있음</li>
+        <li>실수도 방지 할 수 있음</li>
+    </ul>
+    <h3>Block scope</h3>
+    <p>{}안에 변수 넣으면 블럭 안에서만 볼 수 있음</p>
+
+    <h2>variable types</h2>
+    <ul>
+        <li>primitive(더이상 나눠지지 않는 것), string, number, boolean, null</li>
+        <li>object(single item들을 묶어서 한 박스로 관리) 메모리를 레퍼런스를 통해서 나타냄</li>
+    </ul>
+    <h3>boolean (참, 거짓)</h3>
+    <ul>
+        <li>false: 0, '', null, undefined, NaN</li>
+        <li>true: 그 외 나머지 값이 들어 있는</li>
+    </ul>
+    <h3>symbol</h3>
+    <ul>
+        <li>우선 순위를 주고 싶을 때 고유한 식별자가 필요할 때 사용</li>
+        <li>const 변수=Symbol('id')</li>
+        <li>심볼은 바로 출력하면 오류가 나기 때문에 문자열로 변화해서 출력해야 오류가 발생하지 않음</li>
+    </ul>
+    <h4>자바스크립트 변수는 선언할 때 데이터타입이 무엇인지 선언하지 않고 프로그램이 동작할 때 할당된 값에 따라 타입이 변경 될 수 있음</h4>
+    <h2>` 백틱</h2>
+    <ul>
+        <li>있는 그대로 보여줌</li>
+        <li>string 문자와 변수를 연결할 때 사용함</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    <style>
+        .blue{color: blue}
+        .red{color: red}
+        .green{color: green}
+        .aqua{color: aqua}
+    </style>   
+</head>
+<body>
+    <h1>반복문</h1>
+    <h2>while 문</h2>
+    <h2>do while 문</h2>
+    <p>블록을 먼저 실행하고 조건문 읽음</p>
+    <h2>for 문</h2>
+    <ul>
+        <li>for(시작값, 조건문, 증감식){실행문}</li>
+        <li>for(조건){document.getElementById('id값').innerHTML += 배열변수[i]}</li>
+    </ul>
+    <h3>forEach</h3>
+    <ul>
+        <li>foreach (반드시 배열 구조) 익스 11버전부터 사용 가능</li>
+        <li>배열변수.forEach(function(item, index){배열변수[index]})</li>
+        <li>배열변수.forEach(function(item, index){item})</li>
+    </ul>
+    <h3>for of</h3>
+    <ul>
+        <li>for(item of 배열변수){item}</li>
+    </ul>
+    <h3>for in</h3>
+    <ul>
+        <li>배열에서 사용 안함. 객체 내의 값들마다 할일</li>
+        <li>for(x in 객체변수){x + 객체변수[x]}}</li>
+    </ul>
+    <h2>break 문</h2>
+    <p>반복문을 완전히 끝내는 것</p>
+    <h2>continue 문</h2>
+    <p>반복문에서 지금 사용한 부분만 스킵하고 다른 것만 실행</p>
+    <h2>중첩 for 문</h2>
+
+    <script src="loop.js"></script>
+
+    <h2>for</h2>
+    <ul id="for"></ul>
+    <hr>
+    <h2>forEach</h2>
+    <ul id="foreach"></ul>
+    <hr>
+    <h2>forof</h2>
+    <ul id="forof"></ul>
+    <hr>
+    <h2>for in</h2>
+    <ul id="forin"></ul>
+    <hr>
+    
+    <script>
+        var fruits=["cherry", "apple", "banana"]
+        //for
+        for(var i=0; i<fruits.length; i++){
+            document.getElementById('for').innerHTML += "<li>" + fruits[i] + "</li>"
+        }
+        //foreach (반드시 배열 구조) 익스 11버전부터 사용 가능
+        fruits.forEach(function(item, index){
+            // document.getElementById('foreach').innerHTML += "<li>" + fruits[index] + "</li>"
+            document.getElementById('foreach').innerHTML += "<li>" + item + "</li>"
+        });
+        //forof
+        var item;
+        for(item of fruits){
+            document.getElementById('forof').innerHTML += "<li>" + item + "</li>"
+        }
+
+        //for in 배열에서 사용 안함. 객체 내의 값들마다 할일
+        var person={pname: '조지현', page: '42', pgender: '여성'}
+        var x;
+        for(x in person){
+            document.getElementById('forin').innerHTML += '<li>' +x+ ':' +person[x]+ '</li>';
+        }
+    </script>
+</body>
+</html>

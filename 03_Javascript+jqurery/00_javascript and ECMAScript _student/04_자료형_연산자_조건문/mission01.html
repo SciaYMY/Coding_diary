@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission01 과목 평균</title>
+    <script>
+        let korean=Number(prompt("국어 점수 입력",""));
+        let english=Number(prompt("영어 점수 입력",""));
+        let math=Number(prompt("수학 점수 입력",""));
+        let avg=(korean+english+math)/3; 
+        let result= avg>=70 && korean>=60 && english>=60 && math>=60; 
+        document.write(avg+" ", result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
