@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #ground{width: 500px; height: 800px; background: darkgreen; margin: 50px auto; position: relative; border: 10px solid rgb(61, 29, 29); border-radius: 10px;}
+        .ball{width: 20px; height: 20px; border-radius: 50%; position: absolute; color: white; text-align: center; line-height: 20px; font-size: 13px; font-weight: 700;}
+        .line{text-decoration: underline;}
+        .b0{background: #fff; top: 620px; left: 240px;}
+        .b1{background: red; top: 213.3px; left: 250px;}
+        .b2{background: yellow; top: 213.3px; left: 230px; color: #333}
+        .b3{background: black; top: 196px; left: 240px;}
+        .b4{background: orange; top: 196px; left: 220px;}
+        .b5{background: green; top: 196px; left: 260px;}
+        .b6{background: pink; top: 178.7px; left: 250px;}
+        .b7{background: blue; top: 178.7px; left: 230px;}
+        .b8{background: brown; top: 178.7px; left: 210px;}
+        .b9{background: brown; top: 178.7px; left: 270px;}
+        .b10{background: green; top: 161.4px; left: 240px;}
+        .b11{background: red; top: 161.4px; left: 260px;}
+        .b12{background: yellow; top: 161.4px; left: 220px; color: #333}
+        .b13{background: pink; top: 161.4px; left: 200px;}
+        .b14{background: orange; top: 161.4px; left: 280px;}
+        .b15{background: blue; top: 231px; left: 240px;}
+        #stick{width: 10px; height: 100px; background: darkred; position: absolute; top: 730px; left: 245px; border-radius: 5px;}
+    </style>
+        <script src="./js/jquery-2.2.4.min.js"></script>
+        <script>
+            $(function(){
+                $('#stick').animate({left:245, top: 640},500);
+                $('.b0').delay(500).animate({top: 251},400).animate({top: 250, left: 238},450);
+                $('.b11').delay(900).animate({top: 0, left: 330},300).animate({top: 20, left: 380},400);
+                $('.b12').delay(900).animate({top: 20, left: 30},600);
+                $('.b13').delay(900).animate({top: 60, left: 0},430).animate({top: 30, left: 4},400);
+                $('.b14').delay(900).animate({top: 0, left: 450},430).animate({top: 50, left: 480},450).animate({top: 120, left: 450},600);
+                $('.b15').delay(900).animate({top: 200, left: 200},400);
+            });
+        </script>    
+</head>
+<body>
+    <div id="ground">
+        <div class="ball b0"></div>
+        <div class="ball b1">1</div>
+        <div class="ball b2">2</div>
+        <div class="ball b3">8</div>
+        <div class="ball b4">4</div>
+        <div class="ball b5">5</div>
+        <div class="ball b6">6</div>
+        <div class="ball b7">7</div>
+        <div class="ball b8">3</div>
+        <div class="ball line b9">9</div>
+        <div class="ball line b10">10</div>
+        <div class="ball line b11">11</div>
+        <div class="ball line b12">12</div>
+        <div class="ball line b13">13</div>
+        <div class="ball line b14">14</div>
+        <div class="ball line b15">15</div>
+        <div id="stick"></div>
+    </div>
+</body>
+</html>
