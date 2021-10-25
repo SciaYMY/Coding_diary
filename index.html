@@ -990,7 +990,7 @@
                 <ul>
                     <li><a href="./03_Javascript+jqurery/01_jQuery_basic/ex00_0/index.html">Basic</a>
                         <ul>
-                            <li>제이쿼리 라이브러리 연동</li>
+                            <li>제이쿼리 라이브러리 연동 : <a href="http://code.jquery.com/">jQuery CDN</a></li>
                             <li>defer와 같은 기능
                                 <ul>
                                     <li><strong>$(document).ready(function(){ })</strong>;</li>
@@ -1097,22 +1097,221 @@
                                 <ul>
                                     <li>^=, $=, *=</li>
                                     <li>input 요소 : $('input[type=text]') = $('input:text')</li>
-                                    <li>$.merge(Array1, Array2)</li>
                                 </ul>
                             </li>
                             <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex00_2/13_attr_select.html">상태 attribute select</a> : $('요소 :상태')
                                 <ul>
-                                    <li>:</li>
-                                    <li>input 요소 : $('input[type=text]') = $('input:text')</li>
-                                    <li>$.merge(Array1, Array2)</li>
+                                    <li>:hidden, :selected, :checked</li>
+                                    <li>.text()</li>
+                                    <li>.val()</li>
                                 </ul>
                             </li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex03</h3>
+                <ul>
+                    <li>요소.children() : <a href="03_Javascript+jqurery/01_jQuery_basic/ex00_3/01_children_메소드.html">요소 아래 모든 자식들</a></li>
+                    <li>요소.next() : <a href="03_Javascript+jqurery/01_jQuery_basic/ex00_3/02_next_메소드.html">요소 바로 다음 형제</a></li>
+                    <li>요소.nextAll() : <a href="03_Javascript+jqurery/01_jQuery_basic/ex00_3/03_nextAll_메소드.html">요소 다음 모든 형제들</a></li>
+                    <li>첫요소.nextUntil('끝요소') : <a href="03_Javascript+jqurery/01_jQuery_basic/ex00_3/04_nextUntil_메소드.html">요소 사이</a></li>
+                    <li>요소.parent() : <a href="03_Javascript+jqurery/01_jQuery_basic/ex00_3/05_parent_메소드.html">요소 상위 부모</a></li>
+                    <li>자식요소.parents('부모요소') : <a href="03_Javascript+jqurery/01_jQuery_basic/ex00_3/06_parents_메소드.html">자식요소의 조상 중 선택한 부모</a></li>
+                    <li>자식요소.parentsUntil('부모요소') : <a href="03_Javascript+jqurery/01_jQuery_basic/ex00_3/07_parentsUntil_메소드.html">선택한 부모 하위</a></li>
+                    <li>상위요소.find('하위요소') : <a href="03_Javascript+jqurery/01_jQuery_basic/ex00_3/08_find_메소드.html">상위 중 선택한 하위</a></li>
+                    <li>상위요소.is('하위요소') : <a href="03_Javascript+jqurery/01_jQuery_basic/ex00_3/09_is_메소드.html">상위 중 선택한 하위 존재 boolean</a>
+                        <ul>
+                            <li>.prev() : 이전 요소</li>
+                            <li>.siblings() : 형제들</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex04 객체 조작</h3>
+                <ul>
+                    <li>속성 조작 메서드
+                        <ul>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/01.text.html">쓰기</a>
+                                <ul>
+                                    <li>.text() : 텍스트만 변경</li>
+                                    <li>.html() : 태그 적용 됌</li>
+                                </ul>
+                            </li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/03.attr.html">.attr()</a><br>.attr('속성', '값')</li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/04.val.html">.val()</a>
+                                <ul>
+                                    <li>.val(['값1', '값2'])</li>
+                                </ul>
+                            </li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/05.class.html">Class</a>
+                                <ul>
+                                    <li>.addClass('클래스명')</li>
+                                    <li>.removeClass('클래스명')</li>
+                                    <li>.toggleClass('클래스명') : 없으면 add, 있으면 remove</li>
+                                    <li>.hasClass('클래스명') : 없으면 false, 있으면 true</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>효과 메서드
+                        <ul>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/06.show.html">Show, Hide</a>
+                                <ul>
+                                    <li>.show(duration)</li>
+                                    <li>.hide(duration)</li>
+                                </ul>
+                            </li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/07.fade.html">Fade</a>
+                                <ul>
+                                    <li>.fadeIn(duration)</li>
+                                    <li>.fadeOut(duration)</li>
+                                    <li>.fadeTo(duration, opacity)</li>
+                                </ul>
+                            </li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/08.slide.html">Slide</a>
+                                <ul>
+                                    <li>.slideDown(duration)</li>
+                                    <li>.slideUp(duration)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li>수치 조작 메서드
+                        <ul>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/09.width.html">Width</a>
+                                <ul>
+                                    <li>.width() : content 값</li>
+                                    <li>.innerWidth() : padding까지 값</li>
+                                    <li>.outerWidth() : border까지 값</li>
+                                    <li>.outerWidth(값).outerHeight(값)</li>
+                                </ul>
+                            </li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/10.position.html">위치</a>
+                                <ul>
+                                    <li>.offset().top : 화면 기준 수직 값 (top, left)</li>
+                                    <li>.position().top : 상대적 수직 값 (top, bottom, left, right)</li>
+                                </ul>
+                            </li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/11.scrollTop.html">Scroll</a>
+                                <ul>
+                                    <li>$(window).scrollTop(값)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>객체 편집 메서드
+                        <ul>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/02.empty.html">지우기</a>
+                                <ul>
+                                    <li>.empty() : 내용만 삭제</li>
+                                    <li>.remove() : 전체(구조 포함) 삭제</li>
+                                </ul>
+                            </li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/12.before.html">삽입</a>
+                                <ul>
+                                    <li>.after('값')</li>
+                                    <li>.before('값')</li>
+                                    <li>$('값').insertAfter('위치')</li>
+                                    <li>$('값').inserBefore('위치')</li>
+                                </ul>
+                            </li>
+                            <li>Append
+                                <ul>
+                                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/14.append.html">append()</a> : 위치.append(값)
+                                        <ul class="practice">
+                                            <li>&nbsp;<a href="03_Javascript+jqurery/01_jQuery_basic/ex04/17.newEl.html">newElement</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/15.append2.html">appendTo()</a> : 값.append(위치)</li>
+                                </ul>
+                            </li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/16.prepend.html">prepend()</a> : 위치.prepend(값)</li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/13.animation.html">Animation</a>
+                        <ul>
+                            <li>.animate({속성}, 적용시간, 가속도, 콜백함수)</li>
+                            <li>.animate({속성1}, 적용시간).animate({속성2}, 적용시간) = .animate({속성1, 속성2}, 적용시간)</li>
+                            <li>.delay(지연시간)</li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/animation1.html">당구 예제</a></li>
+                        </ul>
+                    </li>
+                    <li>이벤트 등록 메서드
+                        <ul>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/18.mouseenter.html">Mouse, Focus</a>
+                                <ul>
+                                    <li>.mouseenter(function(){ })</li>
+                                    <li>.mouseleave(function(){ })</li>
+                                    <li>.mouseover(function(){ })</li>
+                                    <li>.mouseout(function(){ })</li>
+                                    <li>.focus(function(){ })</li>
+                                    <li>.blur(function(){ })</li>
+                                </ul>
+                            </li>
+                            <li>그룹 이벤트 등록 메서드 : .on()
+                                <ul>
+                                    <li>.on('이벤트1 이벤트2', function(){ })</li>
+                                    <li>.on({'이벤트1 이벤트2' : function(){ }})</li>
+                                    <li>.on({'이벤트1' : function(){ }, '이벤트2' : function(){ }})</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex05 Rollover</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex05_rollover/index.html">rollover</a>
+                        <ul>
+                            <li>.replace('초기값', '변경값')</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex06 Guidetext</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex06_guidetext/index.html">guidetext</a>
+                        <ul>
+                            <li>.defaultValue</li>
+                            <li>.val 에 따른 조건식</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex08 Imgslider</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex08_imgslider/index.html">slideshow</a>
+                        <ul>
+                            <li>.slideshow{float: left; position: relatvie;}</li>
+                            <li>.slideshow a{position: absolute; top: 0; left: 0;}</li>
+                            <li>.slideshow a:not(:first-child){display: none;}</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex09 Tabcontent</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex09_tabcontent/index.html">tabcontent</a>
+                        <ul>
+                            <li>.slideshow{float: left; position: relatvie;}</li>
+                            <li>.slideshow a{position: absolute; top: 0; left: 0;}</li>
+                            <li>.slideshow a:not(:first-child){display: none;}</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex13 Line</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex07_line/index.html">line</a>
+                        <ul>
+                            <li>.animate{position: relatvie; overflow: hidden;}</li>
+                            <li>.css( ).animate({ }, )</li>
                         </ul>
                     </li>
                 </ul>
             </div>
         <h2 id="PJ">Project example</h2>
         <div class="box">
+            <h3><a href="웹디자인기능사/WEB/index.html" target="_black">Web</a></h3>
+                <ul>
+                    <li></li>
+                </ul>
             <h3><a href="04_project 예제/mango/index.html" target="_black">Mango</a></h3>
                 <ul>
                     <li>Favicon : <a href="">favicon generator</a> 이미지 생성 > 경로 수정</li>
