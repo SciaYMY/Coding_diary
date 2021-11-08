@@ -22,7 +22,7 @@
 .menu>ul>li.menu9{background-position: 0 -416px;}
 .menu>ul>li.menu9:hover{background-position: -155px -416px;}
 .menu>ul>li>a{display: block; width: 100%; height: 100%;}
-.menu>ul>li>ul{position: absolute; top: 0; left: 155px; width: 126px; height: 805px; background: aquamarine; visibility: hidden;}
+.menu>ul>li>ul{position: absolute; top: 0; left: 155px; width: 126px; height: 805px; visibility: hidden;}
 .menu>ul>li:hover>ul{visibility: visible;}
 .menu>ul>li:hover>ul>li{width: 126px; height: 115px;}
 .menu>ul>li.menu1>ul>li{background: url(../images/snbLeft1A.png) no-repeat;}
