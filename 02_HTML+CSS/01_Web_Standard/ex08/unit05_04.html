@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{width: 100px; height: 100px; margin: 100px; background: greenyellow;
+            animation: rotate 1.5s infinite, backgrounds 1.5s infinite alternate;
+        }
+        @keyframes rotate{
+            from{transform: perspective(200px) rotateX(0deg) rotateY(0deg)}
+            50%{transform: perspective(200px) rotateX(-180deg) rotateY(0deg)}
+            to{transform: perspective(200px) rotateX(-180deg) rotateY(-180deg)}
+        }
+        @keyframes backgrounds{
+            from{background: red;}
+            50%{background: green;}
+            to{background: yellow;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

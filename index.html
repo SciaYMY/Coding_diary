@@ -276,10 +276,10 @@
                             <li class="tag"> font-weight: value</li>
                         </ul>
                     </li>
-                    <li><a href="02_HTML+CSS/01_Web_Standard/ex06/unit03_01.html">Id selector</a>
+                    <li><a href="02_HTML+CSS/01_Web_Standard/ex06/unit03_01.html">Id selector</a> : 형태구성, 중요한 것에 쓰임
                         <ul>
                             <li class="tag">{ box-shadow: 10px 8px 3px green, -10px -10px 10px orange }</li>
-                            <li><a href="02_HTML+CSS/01_Web_Standard/ex06/unit03_02.html">클래스 선택자</a></li>
+                            <li><a href="02_HTML+CSS/01_Web_Standard/ex06/unit03_02.html">아이디 선택자</a></li>
                         </ul>
                     </li>
                     <li><a href="02_HTML+CSS/01_Web_Standard/ex06/unit04_01.html" class="subject">속성 선택자</a>
@@ -302,7 +302,7 @@
                             </ul>
                             <li><a href="02_HTML+CSS/01_Web_Standard/ex06/unit06_02.html">동적 가상 클래스</a>
                                 <ul>
-                                    <li>:focus : 필드 안 마우스 커서(Tab focus 이동)</li>
+                                    <li>:focus : 필드 안 마우스 커서(Tab focus 이동 : a, input 태그)</li>
                                 </ul>
                             </li>
                             <li><a href="02_HTML+CSS/01_Web_Standard/ex06/unit07_01.html">구조 가상 클래스</a>
@@ -348,21 +348,33 @@
                     <li><a href="02_HTML+CSS/01_Web_Standard/ex07/unit01_01.html" class="subject">글자</a>
                         <ul>
                             <li>font-family: 글꼴 >> inherit</li>
-                            <li><a href="https://fonts.google.com/">구글 웹 폰트</a> : @import</li>
+                            <li><a href="https://fonts.google.com/" target="_blank">구글 웹 폰트</a> : @import
+                                <ul>
+                                    <li>style 가장 위에 위치!</li>
+                                </ul>
+                            </li>
                             <li>font-weight</li>
-                            <li>font-size</li>
-                            <li>color</li>
+                            <li>font-size
+                                <ul>
+                                    <li>rem, em, % : 반응형 단위</li>
+                                </ul>
+                            </li>
+                            <li>color
+                                <ul>
+                                    <li>a 태그 : color, text-decoration은 직접 스타일을 주어야 한다.</li>
+                                </ul>
+                            </li>
                             <li>font-style: italic</li>
                             <li>font-variant: small-caps (작은 대문자)</li>
                         </ul>
                     </li>
                     <li><a href="02_HTML+CSS/01_Web_Standard/ex07/unit01_02.html" class="subject">문단</a>
                         <ul>
-                            <li>text-align: center, justfy</li>
+                            <li>text-align : center, justfy</li>
                             <li>word-spacing: 단어 간격</li>
                             <li>letter-spacing: 자간 (글자 사이 간격)</li>
                             <li>line-height: (행간)</li>
-                            <li>text-transform: capitalize, uppercase, lowercase</li>
+                            <li>text-transform : capitalize, uppercase, lowercase</li>
                             <li>text-decoration: line style color
                                 <ul>
                                     <li>line : underline, overline, line-through</li>
@@ -549,6 +561,13 @@
                                                 <dl>
                                                     <dt>Screen Out</dt>
                                                     <dd>.ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px}</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Phark Method</dt>
+                                                    <dd>의미있는 이미지의 대체 텍스트 제공</dd>
+                                                    <dd>.ir_pm{display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -999px}</dd>
                                                 </dl>
                                             </li>
                                         </ul>
@@ -759,12 +778,133 @@
                 <ul>
                     <li><a href="./02_HTML+CSS/02_HTML5_CSS3/ex_11_Check_Box/index.html">강아지 입양</a>
                         <ul>
-                            <li>article.at:hover{background-color: aquamarine} article div.check{transition: 1s}</li>
+                            <li>#section article{overflow-y: scroll; transition-property: background-color, border; transition-duration: 2s} article.at:hover{background-color: aquamarine; border: 2px solid pink;}</li>
                             <li>input[type="checkbox"]<strong>:checked</strong> ~div.check{height: 0}</li>
+                            <li>div.check{height: 260px; transition: 1s; overflow: hidden}</li>
                             <li class="tag">~ Sibling selector</li>
                         </ul>
                     </li>
                 </ul>
+            <h3>ex 12 Relative Test</h3>
+                <ul>
+                    <li><a href="./02_HTML+CSS/02_HTML5_CSS3/ex_12_Relative_Test/index.html">Relative position</a></li>
+                    <li><a href="./02_HTML+CSS/02_HTML5_CSS3/ex_12_Relative_Test/index1.html">position</a></li>
+                    <li><a href="./02_HTML+CSS/02_HTML5_CSS3/ex_12_Relative_Test/relative-menu.html">Relative Menu</a>
+                        <ul>
+                            <li>#mainHeader{position: relative}</li>
+                            <li>.gnb{position: absolute; right: 10px;}</li>
+                            <li>.nav ul{position: relative; left: 50%; float: left}</li>
+                            <li>.nav ul li{position: <strong>relative</strong>; left: -50%; float: left}</li>
+                        </ul>
+                    </li>
+                    <li><a href="./02_HTML+CSS/02_HTML5_CSS3/ex_12_Relative_Test/dropdown-menu.html">Dropdown Menu</a>
+                        <ul>
+                            <li>.nav{height: 45px}</li>
+                            <li>.nav>li><strong>a{padding</strong>: 10px 20px 18px 20px} : depth 간격 띄우기</li>
+                            <li>.nav>li>ul{display: none} .nav><strong>li:hover</strong>>ul{display: block}</li>
+                            <li>.nav>li>ul li{<strong>padding</strong>: 10px 0}</li>
+                        </ul>
+                    </li>
+                    <li><a href="./02_HTML+CSS/02_HTML5_CSS3/ex_12_Relative_Test/twodepth.html">Two-depth Menu</a>
+                        <ul>
+                            <li>.nav{position: rleative} .nav>li>ul{position: absoltue; top: 40px; left: 0}</li>
+                            <li>.nav>li>ul.sub{left: 70px}</li>
+                        </ul>
+                    </li>
+                    <li><a href="./02_HTML+CSS/02_HTML5_CSS3/ex_12_Relative_Test/border-tip.html">Border tip</a>
+                        <ul>
+                            <li>.border-tip{position: relative} .border-tip>div{position: absolute}</li>
+                            <li>.<strong>top</strong>{<strong>border-bottom: 10px solid color; border-left: 동일 transparent; border-right: 동일 transparent</strong>; top: -10px; left: 50%; transform: translateX(-50%)}</li>
+                            <li>내용 없이 border 두께로 크기가 만들어짐</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex 13 Gnb Menu</h3>
+                <ul>
+                    <li class="tag"><strong>Global Navigation Bar</strong></li>
+                    <li><a href="./02_HTML+CSS/02_HTML5_CSS3/ex_13_Gnb_Menu/index.html">GNG 수면클리닉</a>
+                        <ul>
+                            <li><strong>Image Sprite</strong></li>
+                            <li>#menuWrap{position: relative} .menu>ul>li>ul{position: absolute; visibility: hidden} .menu>ul>li:hover>ul{visibility: visible}</li>
+                            <li>.menu>ul>li.menu{background-position: 0 0} .menu>ul>li.menu:hover{background-position: -155px 0}</li>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML+CSS/02_HTML5_CSS3/menu100_water/index.html">한국수자원공사</a>
+                        <ul>
+                            <li>menu100</li>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML+CSS/02_HTML5_CSS3/redpen/index.html">redpen</a></li>
+                </ul>
+
+            <h3>ex 14 Flex</h3>
+                <ul>
+                    <li><a href="02_HTML+CSS/02_HTML5_CSS3/ex_14_flexbox/00_FLEX_SUMMARY/00_FLEX_SUMMARY.html">Flex summary</a></li>
+                    <li><a href="02_HTML+CSS/02_HTML5_CSS3/ex_14_flexbox/index.html">Main axis</a>
+                        <ul>
+                            <li>.container{display: flex}</li>
+                            <li>flex-direction: row; flex-wrap: nowrap &nbsp;>> 초기값</li>
+                            <li>Justify-content : flex-start, flex-end, center, space-around, space-between, space-evenly</li>
+                            <li>IE11 이하에서 사용불가</li>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML+CSS/02_HTML5_CSS3/ex_14_flexbox/index1.html">Cross axis</a>
+                        <ul>
+                            <li>align-items : stretch, flex-start, center, flex-end, baseline</li>
+                            <li>align-self : flex-end, center</li>
+                            <li><a href="02_HTML+CSS/02_HTML5_CSS3/ex_14_flexbox/index2.html">align-content</a>
+                                <ul>
+                                    <li>.container{display: flex; flex-wrap: wrap}</li>
+                                    <li>align-content : space-around, space-between, center</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML+CSS/02_HTML5_CSS3/ex_14_flexbox/index3.html">Order</a>
+                        <ul>
+                            <li>div{order: 값}</li>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML+CSS/02_HTML5_CSS3/ex_14_flexbox/index4.html">item 크기 변경</a>
+                        <ul>
+                            <li>flex: 0 1 auto</li>
+                            <li>flex : grow shrink basis</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://flexboxfroggy.com/#ko" target="_blank">FLEXBOX FORGGY</a></li>
+                    <li><a href="02_HTML+CSS/02_HTML5_CSS3/ex_14_flexbox/05_Youtube/index.html">Youtube</a>
+                        <ul>
+                            <li>변수
+                                <ul>
+                                    <li>:root{--white-color: #fff; gray-dark-color: #777; --padding: 12px; --avatar-padding: 36px; font-large: 18px} &nbsp;>> 변수 설정</li>
+                                    <li>padding: <strong>var(--padding)</strong>; background: <strong>var(--black-color)</strong> &nbsp;>> 변수 사용</li>
+                                </ul>
+                            </li>
+                            <li>.player{position: sticky} .player video{max-width: 1000px}</li>
+                            <li>말줄임 2줄 이상 적용
+                                <ul>
+                                    <li class="tag">{overflow: hidden; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical}</li>
+                                    <li><strong>display: -webkit-box</strong> : 해당 영역을 box형태로 관리</li>
+                                    <li><strong>-webkit-line-clamp: 숫자</strong> : 영역 내의 컨테츠의 최대 라인수</li>
+                                    <li><strong>-webkit-box-orient: vertical</strong> : 영역 박스 내의 수직 정렬</li>
+                                    <li>버튼 클릭
+                                        <ul>
+                                            <li>선택자.addEventListener('click', function(){ })</li>
+                                            <li>선택자.classList.toggle('clicked')</li>
+                                            <li>선택자.classList.toggle('addTitle')</li>
+                                            <li>.moreBtn{transition: transform 300ms ease-in-out}</li>
+                                            <li>.moreBtn.clicked{transform: rotate(180deg)}</li>
+                                            <li>.moreBtn.addTitle{-webkit-line-clamp: 3}</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>margin-bottom: <strong>calc(</strong>var(--padding)/2<strong>)</strong></li>
+                            <li>.info-upnext{flex-direction: row → column} 반응형 사용</li>
+                        </ul>
+                    </li>
+                </ul>
+
 
         </div>
         <h2 id="JS">Java Script</h2>
@@ -1276,6 +1416,23 @@
                         </ul>
                     </li>
                 </ul>
+            <h3>ex07 Ajax</h3>
+                <ul>
+                    <li>Asynchronous JavaScript and XML : 비동기 방식으로 자료 요청</li>
+                    <li><a href="http://yamazy02.dothome.co.kr/ajax/index_test.html">Load</a>
+                        <ul>
+                            <li><strong>.load()</strong></li>
+                            <li>파일 연결</li>
+                            <li>$('#newsWrap')<strong>.load(</strong>"index.html #news"<strong>)</strong></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://yamazy02.dothome.co.kr/ajax/ajax1.html">ajax</a>
+                        <ul>
+                            <li><strong>$.ajax()</strong></li>
+                            <li>$.ajax({url: "파일", dataType: "데이터 형식", success: function(data){ }})</li>
+                        </ul>
+                    </li>
+                </ul>
             <h3>ex08 Imgslider</h3>
                 <ul>
                     <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex08_imgslider/index.html">slideshow</a>
@@ -1290,18 +1447,46 @@
                 <ul>
                     <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex09_tabcontent/index.html">tabcontent</a>
                         <ul>
+                            <li>tab과 panel을 a href와 id로 연결</li>
                             <li>.slideshow{float: left; position: relatvie;}</li>
                             <li>.slideshow a{position: absolute; top: 0; left: 0;}</li>
                             <li>.slideshow a:not(:first-child){display: none;}</li>
+                            <li>lastAnchor = anchors.filter('.on')</li>
+                            <li>lastPanel = $(lastAnchors.attr('href'))</li>
+                            <li>e<strong>.preventDefault()</strong> : 브라우저의 기본 동작(a 태그의 클릭 디폴트) 동작 무효화</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex10 Tooltip</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex10_tooltip/index.html">tooltip</a>
+                        <ul>
+                            <li>.balloon{position: absolute; display: none}</li>
                         </ul>
                     </li>
                 </ul>
             <h3>ex13 Line</h3>
                 <ul>
-                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex07_line/index.html">line</a>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex13_line/index.html">line</a>
                         <ul>
                             <li>.animate{position: relatvie; overflow: hidden;}</li>
                             <li>.css( ).animate({ }, )</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex14 Zoom</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex14_zoom/index.html">글자 zoom</a>
+                        <ul>
+                            <li>함수가 괄호 내에 있을 때, 함수() 생략</li>
+                            <li>if문으로 버튼 쓰임을 나눔</li>
+                            <li>크기의 한계 : <strong>return false</strong>로 함수 마침</li>
+                        </ul>
+                    </li>
+                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex14_zoom/index1.html">이미지 zoom</a>
+                        <ul>
+                            <li>.index(this)로 어떤 이벤트인지 알아냄</li>
+                            <li>.css({'overflow-y': 'auto', 'transform-origin': '50% 0', 'transform': 'scale(' +base/100+ ')', 'zoom':base+ '%'})</li>
                         </ul>
                     </li>
                 </ul>
@@ -1310,7 +1495,44 @@
         <div class="box">
             <h3><a href="웹디자인기능사/WEB/index.html" target="_black">Web</a></h3>
                 <ul>
-                    <li></li>
+                    <li>메인 메뉴와 서브 메뉴 : 부드러운 움직임과 마우스 하이라이트
+                        <ul>
+                            <li>$('li').hover(function(){ $(this).find('ul').stop()<strong>.slideDown(시간)</strong>;), function 동일 <strong>.slideUp()</strong>;}</li>
+                        </ul>
+                    </li>
+                    <li>슬라이드 이미지
+                        <ul>
+                            <li>ul{position: relative} li{position: absolute; z-index: 순서 덮기}</li>
+                            <li>li 순서는 그대로 <strong>z-index와 opacity 효과</strong></li>
+                            <li>function mainSlide() : 보여지는 슬라이드</li>
+                            <li>.css({zIndex: 1, opaicty: 1}) : 슬라이드에 적용된 효과 초기화</li>
+                            <li>.eq(current).css({z-index:2}) : 다음 보여질 슬라이드</li>
+                            <li>.eq(current== 0 ? 2:current-1).css({z-index:3}).stop().animate({opacity:0}, 시간) : 현재 보이는 슬라이드가 맨 위에서 opacity:0으로 사라짐</li>
+                            <li>function nextCount() : current++ 로 순서를 돌림</li>
+                            <li>if(current>2){current=0} : 슬라이드 index가 2가 마지막</li>
+                            <li>setInterval(nextCount, 시간) : 자동 타이머</li>
+                        </ul>
+                    </li>
+                    <li>Tab
+                        <ul>
+                            <li>button, ul 2개씩 형제 요소</li>
+                            <li>button.addbtn{다른 색}</li>
+                            <li>$('button').click(function(){ })</li>
+                            <li>$('내용창').stop()<strong>.show()</strong></li>
+                            <li>$('다른창').stop()<strong>.hide()</strong></li>
+                            <li>$('button').removeClass('addbtn')</li>
+                            <li>$('다른button').removeClass('addbtn')</li>
+                        </ul>
+                    </li>
+                    <li>팝업
+                        <ul>
+                            <li>.popup-wrap{display: none; position: fixed; width: 100%; height: 100%} : 팝업 배경</li>
+                            <li>.wrap 팝업 따로 만들기</li>
+                            <li>$('popup-btn').click(function(){$('팝업창')<strong>.fadeIn(시간)</strong></li>
+                            <li>$('close-btn').click(function(){$('팝업창')<strong>.fadeOut(시간)</strong></li>
+                        </ul>
+                    </li>
+                    <li>footer 주소 : address 태그</li>
                 </ul>
             <h3><a href="04_project 예제/mango/index.html" target="_black">Mango</a></h3>
                 <ul>
@@ -1337,24 +1559,36 @@
                         </ul>
                     </li>
                 </ul>
+                    
+                    
+        </div>
+        <h2 id="my">MY</h2>
+        <div class="box">
+            <h3>Reference</h3>
+            <ul>
+                <li><a href="./02_HTML+CSS/MY/site.html">Site</a></li>
+                <li><a href="02_HTML+CSS/MY/standard style.html">Standard style</a></li>
+                <li><a href="https://sciaymy.github.io/coding_yah/">My Git</a></li>
+            </ul>
 
-                
-                <h2 id="my">MY</h2>
+            <h3>Study</h3>
+            <ul>
+                <li>팝업 시 뒤에 스크롤 없애기
                     <ul>
-                        <li><a href="./02_HTML+CSS/MY/site.html">Site</a></li>
-                        <li><a href="02_HTML+CSS/MY/standard style.html">Standard style</a></li>
-                        <li><a href="https://sciaymy.github.io/coding_yah/">My Git</a></li>
+                        <li class="tag">$('html, body').css({'overflow': 'hidden', 'height': '100%'});</li>
+                        <li>overflow : hidden → auto</li>
                     </ul>
-            <div id="fastMenu">
-                <ul>
-                    <li><a href="#html">HTML</a></li>
-                    <li><a href="#css">CSS</a></li>
-                    <li><a href="#JS">JS</a></li>
-                    <li><a href="#JQuery">JQuery</a></li>
-                    <li><a href="#my">MY</a></li>
-                </ul>
-            </div>
-
-        </div>    
+                </li>
+            </ul>
+        </div>
+        <div id="fastMenu">
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#JS">JS</a></li>
+                <li><a href="#JQuery">JQuery</a></li>
+                <li><a href="#my">MY</a></li>
+            </ul>
+        </div>
 </body>
 </html>

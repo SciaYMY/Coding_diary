@@ -1,0 +1,7 @@
+body{background: url(https://source.unsplash.com/random) no-repeat center/cover; padding: 8px 24px;}
+h1{color: #fff; text-shadow: #000 0 0 2px;}
+h2{color: #000; text-shadow: #fff 0 0 2px;}
+.box{margin: 24px; background: rgba(255, 255, 255, .3); padding: 2px 16px 16px; border-radius: 8px;}
+.box>ul{list-style: none;}
+.box>ul{display: flex;}
+.box>ul>li{background: #fff; padding: 16px; border-radius: 8px; box-shadow: rgba(0, 0, 0, .3) 0 1px 4px; margin-right: 16px;}

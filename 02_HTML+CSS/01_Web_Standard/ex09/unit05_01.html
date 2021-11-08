@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>로긴 폼 문서 만들기</title>
+	<meta charset="UTF-8" />
+	<style type="text/css">
+		body, h1, p, input, label { 
+			margin:0px;
+			padding:0px;
+			font-family:"맑은 고딕",돋움;
+			font-size:13px;
+			}
+		body { 
+			border-top:15px solid #333;
+			}
+		h1 {
+			font-size:50px;
+			letter-spacing:-3px;
+			color:#C8C8C8;
+			text-align:center;
+			}
+		/* Login Form Design */
+		#loginForm{border-top: 50px solid #f63; padding: 30px;}
+		fieldset{width: 330px; padding: 50px; margin: 20px auto; border: 5px solid #efefef; border-radius: 20px;}
+		legend{display: none;}
+		#login .labelStyle{display: block; float: left; width: 60px; font-weight: 700; padding: 2px;}
+		#login p{float: left; margin: 3px;}
+		#login input{border: 1px solid #999; width: 150px; padding: 2px;}
+		#btnLogin{background: #f63; color: #fff; padding: 15px 5px; border: none; border-radius: 10px; margin: 3px;}
+		#btn1{clear: both; margin: 0 60px; padding: 10px 0;}
+		#btn2{clear: both; margin-left: 60px;}
+		#btn2 input{padding: 5px 10px; background: #666; border-style: none; color: #fff; border-radius: 5px; }
+	</style>
+</head>
+<body>
+	<form id="loginForm">
+		<h1>Member Login</h1>
+		<fieldset>	
+			<legend>Member Loin</legend>
+			<div id="login">
+				<p>
+					<label for="userId" class="labelStyle">아이디</label>
+					<input type="text" id="userId" />
+				</p>
+				<p>
+					<label for="userPWD" class="labelStyle">비밀번호</label>
+					<input type="password" id="userPWD" />
+				</p>
+			</div>
+				<input type="submit" value="로그인하기" id="btnLogin" />
+			<p id="btn1">
+				<input type="checkbox" id="saveId" value="savedIdYes" />
+				<label for="saveId">아이디저장</label>	
+				<input type="checkbox" id="secure" value="secureYes" />
+				<label for="secure">보안접속</label>	
+			</p>
+			<p id="btn2">
+				<input type="button" value="회원가입" id="btnJoin" />
+				<input type="button" value="아이디/비밀번호 찾기" id="btnSearch" />
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

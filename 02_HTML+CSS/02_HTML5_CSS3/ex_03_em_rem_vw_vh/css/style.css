@@ -1,0 +1,16 @@
+*{margin: 0; padding: 0;}
+:root{font-size: 18px;}
+/* html{height: 100%;} */
+body{font-size: 12px;
+    /* height: 100%; */
+}
+.clearfix:after{content: ""; display:block; clear: both;}
+.clearfix{background: red;}
+.box{float: left; margin-right: 20px; background: deepskyblue; color: #fff; text-align: center;}
+.box_px{width: 160px; height: 160px;}
+.wrap{font-size: 10px;}
+/* 부모기준 */
+.box_em{width: 10em; height: 10em;}
+/* 문서의 기본값 root기준 */
+.box_rem{width: 10rem; height: 10rem;}
+p{width: 100%; height: 100vh; font-size: 1.5rem; background: coral;}

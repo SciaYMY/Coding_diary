@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    a{font-size: 1em;}
+    li{width: 90px; height: 90px; padding: 0;}
+    li:nth-child(5n){clear: none;}
+    li:nth-child(3n+3){clear: both;}
+    li:nth-child(2){background: url(./images/sandal2.png) no-repeat center #fff;}
+    li:nth-child(3){background: url(./images/neck2.png) no-repeat center #fff;}
+    li:nth-child(4){background: url(./images/bag2.png) no-repeat center #fff;}
+    li:nth-child(5){background: url(./images/top2.png) no-repeat center #fff;}
+    li:nth-child(6){background: url(./images/dress2.png) no-repeat center #fff;}
+    li:nth-child(7){background: url(./images/bottom2.png) no-repeat center #fff;}
+}

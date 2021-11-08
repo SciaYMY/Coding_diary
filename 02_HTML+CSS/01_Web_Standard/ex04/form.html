@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        form{width:450px;}
+        div{width:100%; text-align:right;}
+        fieldset{padding: 10px 20px; padding-right: 50px;}
+        p{text-align:right;}
+        div input{width:100%}
+    </style>
+</head>
+<body>
+    <form action="#" method="post" name="join">
+        <h1>회원가입</h1>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <p>
+                <label for="userId">아이디</label>
+                <input type="text" name="userId" id="userId">
+            </p>
+            <p>
+                <label for="userPW">비밀번호</label>
+                <input type="password" name="userPW1" id="userPW1">
+            </p>
+            <p>
+                <label for="userPW2">비밀번호 확인</label>
+                <input type="password" name="userPW2" id="userPW2">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <p>
+                <label for="userName">이름</label>
+                <input type="text" name="userName" id="userName">
+            </p>
+            <p>
+                <label for="userEmail">메일 주소</label>
+                <input type="email" name="userEmail" id="userEmail">
+            </p>
+            <p>
+                <label for="userPhone">연락처</label>
+                <input type="tel" name="userPhone" id="userPhone">
+            </p>
+            <p>
+                <label for="userPage">블로그/홈페이지</label>
+                <input type="text" name="userPage" id="userPage">
+            </p>
+        </fieldset>
+        <br>
+        <div><input type="submit" name="join" value="가입하기"></div>
+    </form>
+</body>
+</html>
