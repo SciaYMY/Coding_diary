@@ -1,0 +1,15 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+body{color: #fff}
+li{list-style: none;}
+a{text-decoration: none; color: #fff;}
+#mainHeader{background: darkturquoise; width: 960px; height: 200px; position: relative; margin: 0 auto;}
+#mainHeader .title .heading{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -80%);}
+#mainHeader .gnb{position: absolute; top: 5px; right: 10px;}
+#mainHeader .gnb ul{overflow: hidden;}
+#mainHeader .gnb ul li{float: left;}
+#mainHeader .gnb ul li a{display: block; padding: 2px 10px;}
+#mainHeader .gnb ul li:hover a{background: #000;}
+#mainHeader .nav ul{position: relative; top: 140px; left: 50%; float: left;}
+#mainHeader .nav ul li{position: relative; float: left; left: -50%;}
+#mainHeader .nav ul li a{display: block; padding: 2px 40px;}

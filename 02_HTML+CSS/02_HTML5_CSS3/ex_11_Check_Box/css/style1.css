@@ -1,0 +1,21 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+h2{font-size: 1.2em; margin: 19px;}
+h3{font-size: 1em; display: inline;}
+#wrap{width: 800px; margin: 0 auto;}
+#header{background: #f46075 url(../images/nav2.png) no-repeat right; width: 100%; height: 150px;}
+nav{width: 100%; height: 150px; float: left;}
+nav ul{list-style: none; margin: 60px;}
+nav ul li{display: inline; margin: 15px; font-weight: 600;}
+nav ul li a{text-decoration: none; color: #fff;}
+#section{width: 580px; height: 538px; float: left;}
+#section article{width: 250px; height: 200px; margin: 5px; float: left; border: 3px solid #ccc; padding: 10px; overflow-y: scroll; transition: background, 2s;}
+#section article.at1:hover{background: wheat;}
+#section article.at2:hover{background: burlywood;}
+#section article.at3:hover{background: skyblue;}
+#section article.at4:hover{background: pink;}
+#section article input[type="checkbox"]:checked ~.check{height: 0;}
+#section .check{width: 100%; overflow: hidden; margin: 10px 5px; height: 260px; transition: 1s;}
+#aside{float: right; padding: 0 18px; border: 1px solid hotpink; margin-top: 68.6px;}
+#aside img{display: block;}
+#footer{clear: both; width: 100%; background: mediumturquoise; text-align: center; height: 60px; line-height: 60px;}

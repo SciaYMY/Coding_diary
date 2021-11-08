@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .box_small{width: 100px; height: 100px;}
+        .box_r{background: red; position: absolute; top: 50px; left: 100px;}
+        .box_p{background: purple; width: 700px; height: 500px; position: relative; top: 100px; left: 100px;}
+        .box_b{background: blue;}
+        .box_g{background: greenyellow;}
+    </style>
+</head>
+<body>
+    <div class="box_small box_r"></div>
+    <div class="box_p">
+        <div class="box_small box_b"></div>
+        <div class="box_small box_g"></div>
+    </div>
+</body>
+</html>

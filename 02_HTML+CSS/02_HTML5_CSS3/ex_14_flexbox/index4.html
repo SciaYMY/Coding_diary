@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 아이템의 크기 변경</title>
+    <style>
+        .container{width: 90%; margin: 20px auto; height: 500px; border: 5px solid #ddd; display: flex;}
+        /* flex: 0 1 auto; */
+        .container>div{width: 500px; height: 300px;}
+        .container>div:nth-child(1){background: cyan;
+            flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+            }
+        .container>div:nth-child(2){background: rgb(220, 167, 241);
+            flex-grow: 0; flex-shrink: 2; flex-basis: auto;
+        }
+        .container>div:nth-child(3){background: rgb(211, 233, 112);
+            flex-grow: 1; flex-shrink: 1; flex-basis: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>item1</div>
+        <div>item2</div>
+        <div>item3</div>
+    </div>
+</body>
+</html>

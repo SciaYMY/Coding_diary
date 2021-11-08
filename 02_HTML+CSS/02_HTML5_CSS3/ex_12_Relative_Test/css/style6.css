@@ -1,0 +1,6 @@
+*{margin: 0; padding: 0;}
+.border-tip{width: 400px; padding: 20px; color: #fff; background: darkcyan; margin: 50px auto; position: relative;}
+.top{position: absolute; top:-10px; left: 50%; transform: translateX(-50%,); border-bottom: 10px solid darkcyan; border-left: 10px solid transparent; border-right: 10px solid transparent;}
+.bottom{position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%,); border-top: 10px solid darkcyan; border-left: 10px solid transparent; border-right: 10px solid transparent;}
+.left{position: absolute; bottom: 50%; left: -10px; transform: translatey(-50%,); border-right: 10px solid darkcyan; border-top: 10px solid transparent; border-bottom: 10px solid transparent;}
+.right{position: absolute; bottom: 50%; right: -10px; transform: translatey(-50%,); border-left: 10px solid darkcyan; border-top: 10px solid transparent; border-bottom: 10px solid transparent;}

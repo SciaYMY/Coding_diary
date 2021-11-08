@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* 변수설정 (스타일 가이드)*/
+:root{
+    --white-color: #fff;
+    --black-color: #111;
+    --blue-color: #00a3d9;
+    --red-color: #b3005d;
+    --gray-dark-color: #777;
+    --gray-medium-color: #9b9b8c;
+    --gray-light-color: #dfdfd0;
+    --padding: 12px;
+    --avatar-padding: 36px;
+    --font-large: 18px;
+    --font-small: 12px;
+    --font-medium: 14px;
+}
+body{font-family: 'Roboto', sans-serif;}
+/* 머릿말 */
+header{display: flex; justify-content: space-between; padding: var(--padding); background: var(--black-color); color: var(--white-color);}
+header>.logo{font-size: var(--font-large);}
+header>.logo .fa-youtube{color: var(--red-color);}
+header>.icon .fa-search{margin-right: var(--padding);}
+/* 비디오 */
+.player{position: sticky; top: 0; background: var(--black-color); text-align: center;}
+.player video{max-width: 1000px;}
+/* 인포 */
+.info-upnext{display: flex; flex-direction: column; width: 100%; justify-content: center; /* padding-bottom: 100px; */}
+.info{padding: var(--padding);}
+.info .metadata .hashtags{display: flex; color:var(--blue-color); font-size: var(--font-small)}
+.info .metadata .titleAndButton{display: flex;}
+.info .metadata .titleAndButton .title{font-size: var(--font-medium); margin-right: Var(--padding);
+    /* 두 줄 점점점 */
+    overflow: hidden; word-wrap: break-word;
+     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+button{background: none;}
+.info .metadata .titleAndButton .title.addTitle{font-size: var(--font-medium); margin-right: Var(--padding);
+    overflow: hidden; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+.info .metadata .titleAndButton .moreBtn{height: 100%; transition: transform 300ms ease-in-out; transform-origin: 50% 12px;}
+.info .metadata .titleAndButton .moreBtn.clicked{height: 100%; transform: rotate(180deg); transform-origin: 50% 12px;}
+.info .metadata .views{font-size: var(--font-small); color: var(--gray-dark-color)}
+.actions{display: flex; justify-content: space-around; padding: var(--padding) 0;}
+.actions li button{display: flex; flex-direction: column; font-size: var(--font-small); color: var(--gray-dark-color);}
+.actions li button i{font-size: 16px; margin: 0 auto; margin-bottom: calc(var(--padding)/2);}
+.actions li button .active{color: var(--blue-color);}
+.actions li button span{font-weight: bold;}
+
+.channel{border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; display: flex; padding: var(--padding) 0; justify-content: space-between;}
+.channel .metadata{display: flex; align-items: center;}
+.channel .metadata img{border-radius: 50%; width: var(--avatar-padding); height: var(--avatar-padding); margin-right: var(--padding);}
+.channel .metadata .info1{display: flex; flex-direction: column; font-size: var(--font-small);}
+.channel .metadata .info1 .name{font-size: var(--font-medium);}
+.channel .metadata .info1 .subs{color: var(--gray-dark-color);}
+.channel .subscribe{background: var(--red-color); color: var(--white-color); padding: 2px 5px; border-radius: 5px;}
+
+.upNext{padding: 0 var(--padding) 50px;}
+.upNext .title{font-size: var(--font-medium); color: var(--gray-dark-color); display: block; margin-bottom: calc(var(--padding)/2)}
+.upNext ul .item{display: flex; margin-top: var(--padding);}
+.upNext ul .item .img{flex: 1 1 35%; margin-right: var(--padding);}
+.upNext ul .item .infos{flex: 1 1 60%; display: flex; flex-direction: column;}
+.upNext ul .item .infos .info-title{font-size: var(--font-medium);}
+.upNext ul .item .infos .info-name,
+.upNext ul .item .infos .info-view{font-size: var(--font-small); color: var(--gray-dark-color);}
+.upNext ul .item .icon-more-btn{flex: 1 1 5%; height: 100%;}
+
+footer{position: fixed; width: 100%; background: var(--white-color); bottom: 0; left: 0; border-top: 1px solid #ddd;}
+footer .footer-wrap{padding: var(--padding); display: flex; justify-content: space-between;}
+
+@media screen and (min-width: 768px) {
+    .info-upnext{flex-direction: row; margin: var(--padding) 0}
+}
