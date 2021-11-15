@@ -904,7 +904,16 @@
                         </ul>
                     </li>
                 </ul>
-
+            <h3>Webstandard</h3>
+                <ul>
+                    <li><a href="02_HTML+CSS/03_project/ex01_webstandard/index.html">Webstandard</a>
+                        <ul>
+                            <li>meta 태그 - <strong>검색엔진 최적화 SEO</strong> : Search Engine Optimization</li>
+                            <li><strong>role</strong> 속성 : HTML을 더 의미있게 작성</li>
+                            <li>DTD : 문서형 선언 Dcoument Type Declaration</li>
+                        </ul>
+                    </li>
+                </ul>
 
         </div>
         <h2 id="JS">Java Script</h2>
@@ -1362,7 +1371,7 @@
                                             <li>&nbsp;<a href="03_Javascript+jqurery/01_jQuery_basic/ex04/17.newEl.html">newElement</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/15.append2.html">appendTo()</a> : 값.append(위치)</li>
+                                    <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/15.append2.html">appendTo()</a> : 값.appendTo(위치)</li>
                                 </ul>
                             </li>
                             <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex04/16.prepend.html">prepend()</a> : 위치.prepend(값)</li>
@@ -1462,6 +1471,10 @@
                     <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex10_tooltip/index.html">tooltip</a>
                         <ul>
                             <li>.balloon{position: absolute; display: none}</li>
+                            <li>var balloon=$('&lt;div class="balloon"&gt;&lt;/div&gt;').appendTo('body')</li>
+                            <li>pageX 이벤트 객체</li>
+                            <li>$(this).hover(function(e){ updateBalloonPosition(e.pageX, e.pageY) }, )</li>
+                            <li>$(this).mousemove(function(e){ updateBalloonPosition(e.pageX, e.pageY) })</li>
                         </ul>
                     </li>
                 </ul>
@@ -1487,6 +1500,38 @@
                         <ul>
                             <li>.index(this)로 어떤 이벤트인지 알아냄</li>
                             <li>.css({'overflow-y': 'auto', 'transform-origin': '50% 0', 'transform': 'scale(' +base/100+ ')', 'zoom':base+ '%'})</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex01</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/02_jQuery_middle/ex01/index.html">사계절</a>
+                        <ul>
+                            <li>ul{overflow: hidden} li{float: left}</li>
+                            <li>$('#image>img').attr({src: "이미지 경로", alt: '봄'})</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex02</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/02_jQuery_middle/ex02/index.html">꽃</a>
+                        <ul>
+                            <li>a href="<strong>javascript:</strong>" &nbsp;← .preventDefault() 와 같이 a 동작 무효화</li>
+                            <li>'on' 클래스로 활성화 탭 지정 : .removeClass, .addClass</li>
+                            <li>선택한 그림 보이기
+                                <ul>
+                                    <li>let i = tg.index()</li>
+                                    <li>content.eq(i).css('display', 'block')</li>
+                                </ul>
+                            </li>
+                            <li>링크 연결
+                                <ul>
+                                    <li>let urls=[링크 배열]</li>
+                                    <li>이미지.on( {mouseover: function(){tg.addClass('on')}, mouseout: function(){tg.removeClass('on'), click: function(){let i=tg.parent().index(), linkURL=urls[i]</li>
+                                    <li>location.href = linkURL</li>
+                                    <li>window.open(linkURL)</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
