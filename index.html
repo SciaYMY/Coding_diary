@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쪼랩 일기장</title>
     <style>
+        @font-face{font-family: 'chilgok-cye'; src: local('chilgok-cye'),  url(FONT/칠곡할매/Chilgok_transfonter/Chilgok_Cye.woff) format('woff');}
+        h1, h2, h3, .reference, #fastMenu{font-family: 'chilgok-cye'}
         #fastMenu{position: fixed; top: 0; right: 0; background: #ccc;}
         #fastMenu ul{list-style: none;}
         .box{
@@ -389,7 +391,7 @@
                             <li>white-space: nowrap
                                 <ul>
                                     <li>글자 안 보이게 처리</li>
-                                    <li class="tag">white-space: nowrap; width: 값; tex-overflow: ellipsis; overflow: hidden;</li>
+                                    <li class="tag">white-space: nowrap; width: 값; text-overflow: ellipsis; overflow: hidden;</li>
                                 </ul>
                             </li>
                             <li>white-space: pre</li>
@@ -560,14 +562,14 @@
                                             <li>
                                                 <dl>
                                                     <dt>Screen Out</dt>
-                                                    <dd>.ir_so{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px}</dd>
+                                                    <dd><strong>.ir_so</strong>{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px}</dd>
                                                 </dl>
                                             </li>
                                             <li>
                                                 <dl>
                                                     <dt>Phark Method</dt>
                                                     <dd>의미있는 이미지의 대체 텍스트 제공</dd>
-                                                    <dd>.ir_pm{display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -999px}</dd>
+                                                    <dd><strong>.ir_pm</strong>{display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -999px}</dd>
                                                 </dl>
                                             </li>
                                         </ul>
@@ -911,6 +913,16 @@
                             <li>meta 태그 - <strong>검색엔진 최적화 SEO</strong> : Search Engine Optimization</li>
                             <li><strong>role</strong> 속성 : HTML을 더 의미있게 작성</li>
                             <li>DTD : 문서형 선언 Dcoument Type Declaration</li>
+                            <li>.nav>div>ol>li{float: left; width: 50%} &nbsp; >> 메뉴 두 줄</li>
+                        </ul>
+                    </li>
+                    <li>하위 브라우저
+                        <ul>
+                            <li>ie9
+                                <ul>
+                                    <li>:last-child &nbsp;⇒ class 명 사용</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -1610,7 +1622,7 @@
         <h2 id="my">MY</h2>
         <div class="box">
             <h3>Reference</h3>
-            <ul>
+            <ul class="reference">
                 <li><a href="./02_HTML+CSS/MY/site.html">Site</a></li>
                 <li><a href="02_HTML+CSS/MY/standard style.html">Standard style</a></li>
                 <li><a href="https://sciaymy.github.io/coding_yah/">My Git</a></li>
