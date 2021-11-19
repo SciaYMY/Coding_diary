@@ -1229,7 +1229,7 @@
                     <li>배열 메서드
                         <ul>
                             <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex00_2/04_index_메소드.html">index 값 반환</a> : .index()</li>
-                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex00_2/09_each_메소드.html">선택 요소 배열에 순차 저장</a> : .each(function)</li>
+                            <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex00_2/09_each_메소드.html">선택 요소 배열에 순차 저장</a> : .each(function) ,&nbsp; $.each(선택자, function)</li>
                             <li><a href="03_Javascript+jqurery/01_jQuery_basic/ex00_2/10_map.html">배열의 요소만큼 반복 실행</a>
                                 <ul>
                                     <li>$.map(Array, function) : 인덱스값 오름차순 대입</li>
@@ -1439,7 +1439,7 @@
                 </ul>
             <h3>ex07 Ajax</h3>
                 <ul>
-                    <li>Asynchronous JavaScript and XML : 비동기 방식으로 자료 요청</li>
+                    <li><strong>Asynchronous JavaScript and XML</strong> : 비동기 방식으로 자료 요청</li>
                     <li><a href="http://yamazy02.dothome.co.kr/ajax/index_test.html">Load</a>
                         <ul>
                             <li><strong>.load()</strong></li>
@@ -1450,7 +1450,26 @@
                     <li><a href="http://yamazy02.dothome.co.kr/ajax/ajax1.html">ajax</a>
                         <ul>
                             <li><strong>$.ajax()</strong></li>
-                            <li>$.ajax({url: "파일", dataType: "데이터 형식", success: function(data){ }})</li>
+                            <li>텍스트 유형에 데이터를 요청</li>
+                            <li class="tag">$.ajax({ url: "파일", dataType: "데이터 형식", success: function(data){ 전송할 데이터 } })</li>
+                            <li><strong>JSON</strong> &nbsp; JavaScript Object Notation
+                                <ul>
+                                    <li>배열에서 데이터를 담음</li>
+                                    <li>for in 으로 전송 페이지의 데이터 배열을 수에 따른 데이터로 생성</li>
+                                    <li><strong>for(</strong>var i <strong>in data</strong>){ var $id=data[i].id; var row=$("&lt;tr /&gt;").append( $("&lt;td /&gt;").text($id) }</li>
+                                </ul>
+                            </li>
+                            <li><strong>XML</strong> &nbsp; eXtensible Markup Language
+                                <ul>
+                                    <li>나열된 태그들에서 데이터를 담음</li>
+                                    <li><strong>$.each(</strong>$data, function(i, o){ var $id=$(o).find("id").text(); var row=$("&lt;tr /&gt;").append($("&lt;td /&gt;").text($id)) })</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="http://yamazy02.dothome.co.kr/ajax/news.html">news</a>
+                        <ul>
+                            <li>url : news.php</li>
                         </ul>
                     </li>
                 </ul>
