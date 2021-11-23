@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>쪼랩 일기장</title>
+    <title>MY 쪼랩 Wiki</title>
     <style>
         @font-face{font-family: 'chilgok-cye'; src: local('chilgok-cye'),  url(font/칠곡할매/Chilgok_transfonter/Chilgok_Cye.woff) format('woff');}
         h1, h2, h3, .reference, #fastMenu{font-family: 'chilgok-cye'}
@@ -906,14 +906,29 @@
                         </ul>
                     </li>
                 </ul>
-            <h3>Webstandard</h3>
+            <h3>CSS Project practice</h3>
                 <ul>
                     <li><a href="02_HTML+CSS/03_project/ex01_webstandard/index.html">Webstandard</a>
                         <ul>
-                            <li>meta 태그 - <strong>검색엔진 최적화 SEO</strong> : Search Engine Optimization</li>
+                            <li>h 태그에 ir-so 효과를 넣어 부재목을 꼼꼼히 사용함</li>
+                            <li>HEAD
+                                <ul>
+                                    <li>meta 태그 - <strong>검색엔진 최적화 SEO</strong> : Search Engine Optimization</li>
+                                    <li>DTD : 문서형 선언 Dcoument Type Declaration</li>
+                                </ul>
+                            </li>
                             <li><strong>role</strong> 속성 : HTML을 더 의미있게 작성</li>
-                            <li>DTD : 문서형 선언 Dcoument Type Declaration</li>
                             <li>.nav>div>ol>li{float: left; width: 50%} &nbsp; >> 메뉴 두 줄</li>
+                            <li>a > span.ir_pm 전체메뉴</li>
+                            <li>span{position: relative; height: 93px} span>em{display: block; position: absolute; bottom: 0; left: 0; height: 0; transition: height 0.3s} span:hover em{height: 100%}  &nbsp; >> 올라오는 호버</li>
+                            <li>.tab>ul>li{margin-right: -1px} &nbsp; >> tab 간격 맞추기</li>
+                            <li>li>a{width: 60%; float: left} li>span{width: 30%; float: right} &nbsp; >> 날짜가 있는 공지사항 목록 : </li>
+                            <li>li:before{content: ""; width: 1px; heigth: 12px; background-color: #ccc; position: absolute; left: 0 ;top: 3px} li:first-chil:before{width: 0; heigth: 0} &nbsp; >> footer 칸막이</li>
+                        </ul>
+                    </li>
+                    <li><a href="02_HTML+CSS/03_project/ex02_Hershe/index.html">Hershe</a>
+                        <ul>
+                            <li></li>
                         </ul>
                     </li>
                     <li>하위 브라우저
@@ -926,6 +941,17 @@
                         </ul>
                     </li>
                 </ul>
+
+            <h3>SCSS (Less Sass)</h3>
+            <ul>
+                <li><a href="02_HTML+CSS/04_Less_Scss/scss/index.html">scss</a>
+                    <ul>
+                        <li>$변수</li>
+                        <li>&:hover >> 현재 선택자</li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
 
         </div>
         <h2 id="JS">Java Script</h2>
@@ -1447,31 +1473,39 @@
                             <li>$('#newsWrap')<strong>.load(</strong>"index.html #news"<strong>)</strong></li>
                         </ul>
                     </li>
-                    <li><a href="http://yamazy02.dothome.co.kr/ajax/ajax1.html">ajax</a>
+                    <li><strong>ajax</strong>
                         <ul>
                             <li><strong>$.ajax()</strong></li>
                             <li>텍스트 유형에 데이터를 요청</li>
                             <li class="tag">$.ajax({ url: "파일", dataType: "데이터 형식", success: function(data){ 전송할 데이터 } })</li>
-                            <li><strong>JSON</strong> &nbsp; JavaScript Object Notation
+                            <li><strong><a href="http://yamazy02.dothome.co.kr/ajax/ajax1.html">JSON</a></strong> &nbsp; JavaScript Object Notation
                                 <ul>
                                     <li>배열에서 데이터를 담음</li>
                                     <li>for in 으로 전송 페이지의 데이터 배열을 수에 따른 데이터로 생성</li>
                                     <li><strong>for(</strong>var i <strong>in data</strong>){ var $id=data[i].id; var row=$("&lt;tr /&gt;").append( $("&lt;td /&gt;").text($id) }</li>
                                 </ul>
                             </li>
-                            <li><strong>XML</strong> &nbsp; eXtensible Markup Language
+                            <li><strong><a href="http://yamazy02.dothome.co.kr/ajax/ajax2.html">XML</a></strong> &nbsp; eXtensible Markup Language
                                 <ul>
                                     <li>나열된 태그들에서 데이터를 담음</li>
                                     <li><strong>$.each(</strong>$data, function(i, o){ var $id=$(o).find("id").text(); var row=$("&lt;tr /&gt;").append($("&lt;td /&gt;").text($id)) })</li>
+                                    <li><strong>$.each(</strong>$data, function(i, o){ var $변수=$(o).find("태그이름").text(); var row=$("&lt;tr /&gt;").append($("&lt;td /&gt;").text($변수)) })</li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="http://yamazy02.dothome.co.kr/ajax/news.html">news</a>
+                    <li><strong>RSS</strong> &nbsp; Really Simple Syndication &nbsp;- <a href="http://yamazy02.dothome.co.kr/ajax/news.html">news</a>
                         <ul>
+                            <li><a href="https://rssplus.chosun.com/" target="_black">조선닷컴 RSS</a></li>
+                            <li>php로 교차 도메인 데이터 XML 불러오기
+                                <ul>
+                                    <li>CURLOPT_URL, "뉴스 RSS 링크" 사용</li>
+                                </ul>
+                            </li>
                             <li>url : news.php</li>
                         </ul>
                     </li>
+                    <li><a href="http://yamazy02.dothome.co.kr/ajax/login.html">Login</a></li>
                 </ul>
             <h3>ex08 Imgslider</h3>
                 <ul>
