@@ -929,6 +929,10 @@
                     <li><a href="02_HTML+CSS/03_project/ex02_Hershe/index.html">Hershe</a>
                         <ul>
                             <li>검색창 &lt;form&gt;</li>
+                            <li>ul>li{position: relative} ul>li>.drop{position: absolute}</li>
+                            <li>메뉴 옆 그림 : ul + p{float: left}</li>
+                            <li>메뉴 텍스트 배치 : p{position: relative} p>.text{position: absolute}</li>
+                            <li>.banner ul li:not(:first-child){position: absolute; left: 100%}</li>
                         </ul>
                     </li>
                     <li>하위 브라우저
@@ -958,7 +962,11 @@
         <div class="box">
             <h3>01 javascrip란</h3>
                 <ul>
-                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/01_javascript란/javascript.html">javascript 설명</a></li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/01_javascript란/javascript.html">javascript 설명</a>
+                        <ul>
+                            <li>인터프린트 언어 : 위에서 순서대로 읽음</li>
+                        </ul>
+                    </li>
                     <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/01_javascript란/index.html">맛보기</a>
                         <ul>
                             <li><strong>&lt;![CDATA[ &nbsp; ]]&gt;</strong> (내부 script 주석처리) : 잘못 인식 방지</li>
@@ -981,6 +989,8 @@
                     <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/02_콘솔에 출력, async와 defer차이점/index.html">스크립트 속성 & 사이트</a>
                         <ul>
                             <li>&lt;script 속성 src="main.js"&gt;</script><br>async, <strong>defer</strong></li>
+                            <li>defer : 스크립트의 실행을 지연 (전체 문서가 로드 된 후 실행)</li>
+                            <li>async : 비동기적으로 실행 (스크립트가 다운로드 되는 즉시 실행)</li>
                         </ul>
                     </li>
                 </ul>
@@ -1001,10 +1011,10 @@
                             <li>확인 : typeof<br>console.log(typeof 이름)</li>
                         </ul>
                     </li>
-                    <li>Hoisting : 선언만 끌어올린다.</li>
+                    <li><strong>Hoisting</strong> : 선언만 끌어올린다.</li>
                     <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/03_변수와상수_호이스팅_유효범위/01_let, const와 블록 레벨 스코프/index.html">ES6</a></li>
                     <li>'use strict'</li>
-                    <li>ECMAScript
+                    <li><strong>ECMAScript</strong>
                         <ul>
                             <li>ES5 - var (variable) : 변경되는 값 rw(read/write)
                                 <ul>
@@ -1505,7 +1515,29 @@
                             <li>url : news.php</li>
                         </ul>
                     </li>
-                    <li><a href="http://yamazy02.dothome.co.kr/ajax/login.html">Login</a></li>
+                    <li><a href="http://yamazy02.dothome.co.kr/ajax/login.html">Login</a>
+                        <ul>
+                            <li>form 요소 이용</li>
+                            <li><strong>.serialize()</strong> : 쿼리 스트링 형식의 데이터로 변환</li>
+                            <li>'submit', function(e){
+                                <ul style="list-style: none">
+                                    <li>e.preventDefault(); &nbsp; >> form의 submit의 action 비활성화</li>
+                                    <li>var myData=$frm<strong>.serialize()</strong>;</li>
+                                    <li>$.ajax()</li>
+                                </ul>
+                            }
+                            </li>
+                            <li>$.ajax( {url: $frm.attr("action"), dataType: "POST", data: myData, success: function(res){
+                                <ul style="list-style: none">
+                                    <li>if(res){ var jsonData=<strong>JSON.parse(</strong>res<strong>)</strong> }</li>
+                                </ul>
+                                }} )
+                            </li>
+                            <li class="tag">$.ajax({ url: "파일", dataType: "데이터 형식", <strong>data: "서버 전송 데이터"</strong> success: function(data){ 전송할 데이터 } })</li>
+                            <li><strong>JSON.parse()</strong> : </li>
+                        </ul>
+                    </li>
+                    <li><a href="http://yamazy02.dothome.co.kr/map/">Map</a></li>
                 </ul>
             <h3>ex08 Imgslider</h3>
                 <ul>
@@ -1672,6 +1704,15 @@
                     
                     
         </div>
+        <h2 id="web">웹디자인 기능사</h2>
+        <div class="box">
+            <h3><a href="웹디자인기능사/최신기출유형문제02회/20211104/index.html" target="_black">최신기출유형문제02회</a></h3>
+                <ul>
+                    <li>세로 메뉴, 탭</li>
+                    <li><a href="웹디자인기능사/최신기출유형문제02회/20211123_my/index.html">MY</a></li>
+                </ul>
+        </div>
+
         <h2 id="my">MY</h2>
         <div class="box">
             <h3>Reference</h3>
