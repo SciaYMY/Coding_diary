@@ -27,13 +27,13 @@
 .nav>div.last>ol>li{width: 100%;}
 .nav>div>ol>li>a:hover{text-decoration: underline;}
 
-.cont_tit{background: #fff; }
+.cont_tit{background: #fff; cursor: pointer}
 .tit{text-align: center; position: relative;}
 .tit h2{font-family: 'Nanum Pen Script', cursive; font-size: 40px; padding: 5px 0; letter-spacing: 2px; color: #8a8a7b;}
 .tit a.btn{position: absolute; width: 60px; height: 60px; top: 0; right: 0; background: url(../img/icon.png) no-repeat 0 -600px;}
 .tit a.btn:hover{background-position: 0 -660px;}
 /* 배너 */
-.cont_banner{width: 100%; background: #ccc;}
+.cont_banner{width: 100%; background: #ccc; display: none;}
 .banner{position: relative;}
 .banner a.prev{position: absolute; background: url(../img/icon.png) no-repeat -150px 0; width: 43px; height: 43px; top: 50%; transform: translateY(-50%); left: -80px;}
 .banner a.prev:hover{background-position: -193px 0;}
@@ -80,7 +80,7 @@
 .notice3 ul li{position: relative; padding: 8px 0 14px 0;}
 .notice3 ul li a img{position: absolute; top: 0; left: 0; border: 1px solid #0093dd;}
 .notice3 ul li a strong{display: block; padding-left: 60px;}
-.notice3 ul li a span{padding-left: 60px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; background: red;}
+.notice3 ul li a span{padding-left: 60px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; /* background: red; */}
 /* 로그인 */
 .login{padding-top: 10px; margin-bottom: 5px;}
 .login form{background: #f2f4f5; padding: 15px;}

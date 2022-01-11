@@ -8,10 +8,8 @@
     <style>
         @font-face{font-family: 'chilgok-cye'; src: local('chilgok-cye'),  url(font/칠곡할매/Chilgok_transfonter/Chilgok_Cye.woff) format('woff');}
         h1, h2, h3, .reference, #fastMenu{font-family: 'chilgok-cye'}
-        #fastMenu{position: fixed; top: 0; right: 0; background: #ccc;}
-        #fastMenu ul{list-style: none;}
         .box{
-            width: 1000px; border: 5px solid #ccc; padding: 20px; margin: 0 auto;
+            width: 1000px; border: 5px solid #ccc; padding: 20px; margin: 0 auto; border-radius: 0 50px 50px 0
         }
         /* #box h2{
             margin: 0;
@@ -30,6 +28,7 @@
             text-decoration: underline wavy orange;
         }
     </style>
+    <link rel="stylesheet" href="02_HTML+CSS/MY/style.css">
 </head>
 <body>
     <h1>정리</h1> <hr>
@@ -1068,9 +1067,9 @@
                             <li>locatioin.reload(); : 브라우저 새로 고침</li>
                         </ul>
                     </li>
-                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/swich.html">swich</a>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/04_자료형_연산자_조건문/switch.html">switch</a>
                         <ul>
-                            <li>swich(변수){<br>&nbsp;case 값 : 실행문; break;<br>&nbsp;case 값 : 실행문; break;<br>&nbsp;default : 실행문}</li>
+                            <li>switch(변수){<br>&nbsp;case 값 : 실행문; break;<br>&nbsp;case 값 : 실행문; break;<br>&nbsp;default : 실행문}</li>
                         </ul>
                     </li>
                 </ul>
@@ -1113,7 +1112,7 @@
                         </ul>
                     </li>
                 </ul>
-            <h3>06 함수 (function)</h3>
+            <h3>06 함수 Function</h3>
                 <ul>
                     <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/06_함수(function)/function.html">Function</a></li>
                     <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/06_함수(function)/function1.html">Immediately-invoked function expression</a> (즉시 실행 함수)
@@ -1158,6 +1157,14 @@
                 </ul>
             <h3>07 내장함수</h3>
                 <ul>
+                    <li>객체 Object : 상태(속성, Attribute) + 행동(메소드, Method)
+                        <ul>
+                            <li>내장객체</li>
+                            <li>브라우저 객체 : window 객체 = Document + Location + History 객체</li>
+                            <li>문서 객체 모델</li>
+                            <li>사용자 정의 객체</li>
+                        </ul>
+                    </li>
                     <li>window 객체의 메서드
                         <ul>
                             <li>alert() : 경고창</li>
@@ -1177,7 +1184,166 @@
                 </ul>
             <h3>08 생성자함수</h3>
                 <ul>
-                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/08_생성자함수/index.html">생성자함수</a></li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/08_생성자함수/index.html">생성자함수</a>
+                        <ul>
+                            <li>var 참조변수 = new 함수명(); 참조변수.속성=값,참조변수.함수=function(){JS코드}</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>09 객체 Object</h3>
+                <ul>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/09_객체(object)/index.html">생성자 함수, 날짜 객체</a>
+                        <ul>
+                            <li>var 참조변수 = new Date();</li>
+                            <li>날짜 메서드 : getFullYear(), .getMonth(), .getDate(), .getDay(), .getTime()</li>
+                        </ul>
+                    </li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/09_객체(object)/object.html">Object</a></li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/09_객체(object)/math.html">수학 객체</a>
+                        <ul>
+                            <li>Math.max( ), .min( )</li>
+                            <li>Math.round( ) : 반올림, .floor( ) : 내림, .ceil( ) : 올림</li>
+                            <li>Math.random( )</li>
+                            <li>Math.PI</li>
+                            <li>가위바위보
+                                <ul>
+                                    <li>location.reload()</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>10 수학메서드 Math</h3>
+                <ul>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/10_수학메서드(Math)/math.html">Math Object</a></li>
+                </ul>
+            <h3>11 배열 Array</h3>
+                <ul>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/11_배열(array)/array.html">배열, 문자열 객체</a></li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/11_배열(array)/index.html">Array Object</a>
+                        <ul>
+                            <li>var 참조변수 = new Array()</li>
+                            <li>var 참조변수 = ["", "", ""]</li>
+                            <li>.length</li>
+                            <li>.join, .concat, .slice</li>
+                            <li>.sort, .reverse</li>
+                            <li>.splice, .shift, .push, .unshift</li>
+                        </ul>
+                    </li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/11_배열(array)/array1.html">String Object</a>
+                        <ul>
+                            <li>.charAt(index), .indexOf('문자'), .lastIndexOf('문자'), .search('문자')</li>
+                            <li>.match('문자')</li>
+                            <li>.replace('바꿀문자', '새문자'), .slice( , ), .substr( , ), .substring( , ), .split('문자')</li>
+                            <li>.toLowerCase(), .toUpperCase()</li>
+                            <li>.length</li>
+                            <li>.concat('문자'), .trim()</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>12 브라우저 객체 모델</h3>
+                <ul>
+                    <li>window 객체</li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/12_브라우저객체모델(Browser Object Model)/index.html">BOM, Browser Object Model</a></li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/12_브라우저객체모델(Browser Object Model)/setinterval.html">setInterval(), setTimeout()</a>
+                        <ul>
+                            <li>var 변수 = setInterval( function(){ } )</li>
+                            <li>clearInterval(변수)</li>
+                            <li>var 변수 = setTimeout( function(){ } )</li>
+                        </ul>
+                    </li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/12_브라우저객체모델(Browser Object Model)/screen.html">screen 객체</a>
+                        <ul>
+                            <li>screen.width</li>
+                            <li>screen.height</li>
+                            <li>screen.availWidth &nbsp;: 작업표시줄 제외</li>
+                            <li>screen.colorDepth</li>
+                        </ul>
+                    </li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/12_브라우저객체모델(Browser Object Model)/location.html">location 객체</a>
+                        <ul>
+                            <li>location.href=' '</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>13 자바스크립트 선택자</h3>
+                <ul>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/13_자바스크립트 선택자/html요소 선택.html">Javascript Basic Selector</a>
+                        <ul class="tag subject">
+                            <li>document.getElementById(' ')</li>
+                            <li>document.getElementByClassName(' ')</li>
+                            <li>document.getElementByTagName(' ')</li>
+                            <li>document.querySelector(' ')</li>
+                        </ul>
+                        <ul>
+                            <li>배열 : for(var i=0; i&lt;=paragraphs.length; i++){ paragraphs[i].style.color='red' }</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>14 아코디언 Accodion</h3>
+                <ul>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/14_아코디언 accodion/index.html">Accodion</a>
+                        <ul>
+                            <li>heading[i].<strong>addEventListner('click', function(e){</strong> for(var k=0; k&lt;question.length; k++){<br>
+                                question[k].classList.remove('active'); <strong>e.target.parentNode</strong>.classList.add('active'); activeBody(); } })
+                            </li>
+                            <li class="tag">.parenNode</li>
+                            <li>document.querySelector('.panel-quesion<strong>.active</strong> .panel-body')</li>
+                            <li>activePanel<strong>.style.display</strong>='block'</li>
+                            <li class="tag">.add, .remove, .style</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>15 탭 Tabs</h3>
+                <ul>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/15_tabs 자바스크립트 탭/index.html">Tab</a>
+                        <ul>
+                            <li>targetLink[i]<strong>.addEventListner('click', function(e){ })</strong></li>
+                            <li>e.target<strong>.getAttribute('href')</strong></li>
+                            <li>orgTarget<strong>.replace("#", "")</strong></li>
+                            <li class="tag">.getAttribute(''), .replace('', '')</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>17 비디오 컨트롤</h3>
+                <ul>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/17_비디오 컨트롤/index.html">audio & video</a>
+                        <ul>
+                            <li>&lt;video src="주소" muted&gt;</li>
+                            <li>document.getElementById('audioPlay')<strong>.addEventListner('click',</strong> playAudio)</li>
+                            <li>function playAudio(){ audioplay<strong>.play()</strong> }</li>
+                            <li class="tag">.play(), .pause()</li>
+                        </ul>
+                    </li>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/17_비디오 컨트롤/index1.html">jQuery</a>
+                        <ul>
+                            <li>$('#videoPlay')<strong>.click(function(){</strong> videos.get(0).play() })</li>
+                            <li>video<strong>.get(0)</strong></li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>20 멀티 슬라이드</h3>
+                <ul>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/20_순수 자바스크립트 멀티 슬라이드/index.html">scroll changed menu</a>
+                        <ul>
+                            <li><strong>window.addListener('scroll'</strong>, function(){ })</li>
+                            <li>if(this<strong>.pageYoffset</strong> > $mainHeader<strong>.offsetHeight</strong>){
+                                <br>if(!$mainHeader<strong>.classList.contains</strong>('addHeader'){ $mainHeader<strong>.classList.add</strong>('addHeader'); switchImg($smallLogo) })
+                            }</li>
+                            <li><strong>setTimeout(</strong> function(){$logo<strong>.setAttribute('src'</strong>, newImg); $logo<strong>.classList.remove</strong>('hide')} )</li>
+                            <li class="tag">window.pageYOffset : Y값 픽셀 반환</li>
+                            <li class="tag">window.pageYOffset, HTMLElement.offsetHeight, Node.contains()</li>
+                            <li>script 파일 경로 = HTML 기준 경로</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>22 숫자 바뀌는 애니메니션</h3>
+                <ul>
+                    <li><a href="./03_Javascript+jqurery/00_javascript and ECMAScript _student/22_자바스크립트 숫자 바뀌는 애니메이션/index.html">number animation</a>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
                 </ul>
 
         </div>
@@ -1538,6 +1704,7 @@
                         </ul>
                     </li>
                     <li><a href="http://yamazy02.dothome.co.kr/map/">Map</a></li>
+
                 </ul>
             <h3>ex08 Imgslider</h3>
                 <ul>
@@ -1624,11 +1791,29 @@
                             <li>링크 연결
                                 <ul>
                                     <li>let urls=[링크 배열]</li>
-                                    <li>이미지.on( {mouseover: function(){tg.addClass('on')}, mouseout: function(){tg.removeClass('on'), click: function(){let i=tg.parent().index(), linkURL=urls[i]</li>
+                                    <li>이미지.on( {mouseover: function(){tg.addClass('on')}, mouseout: function(){tg.removeClass('on'), <br>click: function(){let i=tg.parent()<strong>.index()</strong>, linkURL=<strong>urls[i]</strong></li>
                                     <li>location.href = linkURL</li>
-                                    <li>window.open(linkURL)</li>
+                                    <li><strong>window.open(</strong>linkURL)</li>
                                 </ul>
                             </li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>ex03</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/02_jQuery_middle/ex03/indexv.html">세로 메뉴 슬라이드</a>
+                        <ul>
+                            <li>.menu_image{<strong>height: 0; overflow: hidden</strong>}</li>
+                            <li>.text_image <strong>.off{display: block}</strong> .text_image <strong>.on{display: none}</strong></li>
+                            <li>menu<strong>.hover{</strong>function(){ }}</li>
+                            <li>let onImg=<strong>$(this).find(</strong>'.text_img>.on'), offImg<strong>=$(this).find(</strong>'.text_img>.off');</li>
+                            <li>onImg<strong>.css('display', 'block')</strong>; offImg<strong>.css('display', 'none')</strong></li>
+                            <li>menuImage<strong>.stop().animate({height: imageHeight}, 600)</strong></li>
+                        </ul>
+                    </li>
+                    <li><a href="03_Javascript+jqurery/02_jQuery_middle/ex03/indexh.html">가로 메뉴 슬라이드</a>
+                        <ul>
+                            <li>.menu_image, .text_img{<strong>float: left</strong>}</li>
                         </ul>
                     </li>
                 </ul>
@@ -1706,10 +1891,23 @@
         </div>
         <h2 id="web">웹디자인 기능사</h2>
         <div class="box">
+            <h3><a href="웹디자인기능사/기출유형문제 04회/20211109/index.html" target="_black">기출유형문제04회</a></h3>
+                <ul>
+                    <li>인터넷센터</li>
+                    <li>가로 각 메뉴, 바로가기</li>
+                    <li><a href="웹디자인기능사/기출유형문제 04회/20211206_MY/index.html" target="_black">MY</a></li>
+                </ul>
             <h3><a href="웹디자인기능사/최신기출유형문제02회/20211104/index.html" target="_black">최신기출유형문제02회</a></h3>
                 <ul>
+                    <li>빛축제</li>
                     <li>세로 메뉴, 탭</li>
-                    <li><a href="웹디자인기능사/최신기출유형문제02회/20211123_my/index.html">MY</a></li>
+                    <li><a href="웹디자인기능사/최신기출유형문제02회/20211123_my/index.html" target="_black">MY</a></li>
+                </ul>
+            <h3><a href="웹디자인기능사/최신기출유형문제05회/20211108/index.html" target="_black">최신기출유형문제05회</a></h3>
+                <ul>
+                    <li>남율건설</li>
+                    <li>가로 배경 메뉴, opacity slide</li>
+                    <li><a href="웹디자인기능사/최신기출유형문제05회/20211130_my/index.html">MY</a></li>
                 </ul>
         </div>
 
@@ -1733,13 +1931,27 @@
                 </li>
             </ul>
         </div>
-        <div id="fastMenu">
+        <div id="nameTag">
             <ul>
                 <li><a href="#html">HTML</a></li>
                 <li><a href="#css">CSS</a></li>
                 <li><a href="#JS">JS</a></li>
                 <li><a href="#JQuery">JQuery</a></li>
                 <li><a href="#my">MY</a></li>
+            </ul>
+        </div>
+        <div id="postIt">
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#JS">JS</a></li>
+                <li><a href="#JQuery">JQuery</a></li>
+                <li><a href="#my">MY</a>
+                    <ul>
+                        <li><a href="./02_HTML+CSS/MY/site.html">Site</a></li>
+                        <li><a href="./02_HTML+CSS/MY/setting.html">Setting</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 </body>
