@@ -1814,6 +1814,49 @@
                     <li><a href="03_Javascript+jqurery/02_jQuery_middle/ex03/indexh.html">가로 메뉴 슬라이드</a>
                         <ul>
                             <li>.menu_image, .text_img{<strong>float: left</strong>}</li>
+                            <li>let imageWidth=$('#nav li img')<strong>.innerWidth()</strong>;</li>
+                            <li>menuImage<strong>.stop().animate(</strong>{widdth: imageWidth}, 600)</li>
+                        </ul>
+                    </li>
+                    <li><a href="03_Javascript+jqurery/02_jQuery_middle/ex03/indexheq.html">가로 메뉴 슬라이드</a>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li><a href="03_Javascript+jqurery/02_jQuery_middle/ex03/slide.html">숫자 사방 슬라이드</a>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>01.cross</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/03.jquery_effect/01_cross/index.html">cross</a>
+                        <ul>
+                            <li>box{<strong>position: relative</strong>}</li>
+                            <li>.hover_x{width: 100%; height: 50%; <strong>position: absolute</strong>; top: 50%; left: 0; background: rgba(255, 255, 255, .5)}</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>12.X button</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/03.jquery_effect/12.x_button/index.html">x Button</a>
+                        <ul>
+                            <li>line 3개 이용</li>
+                            <li>.box{<strong>position: relative</strong>} .box<strong>>div{position: absolute</strong>; width: 100%; height: 2px}</li>
+                            <li>.line1{<strong>transform: rotate(0deg)</strong>} .line2{opacity: 1; top: 50%} .line3{transform: rotate(0deg); top: 100%}</li>
+                            <li><strong>.add</strong> .line1{<strong>transform: rotate(-45deg); top: 50%</strong>} .add .line2{opacity: 0} .add .line3{transform: rotate(45deg); top: 50%}</li>
+                            <li>$('.box')<strong>.click(</strong>function(){ $(this)<strong>.toggleClass('add')</strong> })</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>13.hover slide</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/03.jquery_effect/13_hover_slide/">hover slide</a>
+                        <ul>
+                            <li>$('.section')<strong>.hover( )</strong> </li>
+                            <li>function(){ $(this).stop().animate({width: 920, <strong>left: 0</strong>}, 500); $('.visual').stop().animate({<strong>left:</strong> -240}, 500) }</li>
+                            <li>function(){ $(this).stop().animate({width: 200}, 500); $('.visual').stop().animate({<strong>left: 0</strong>}, 500) }</li>
                         </ul>
                     </li>
                 </ul>
@@ -1889,6 +1932,27 @@
                     
                     
         </div>
+        <h2 id="git">Git</h2>
+        <div class="box">
+            <h3><a href="Git/index.html">Git</a></h3>
+                <ul>
+                    <li>Git Hub Repository</li>
+                </ul>
+            <h3>명령어</h3>
+                <ul>
+                    <li>pwd : print working directory</li>
+                    <li>cd ..</li>
+                    <li>ls -al</li>
+                    <li>mkdir : make directory</li>
+                    <li>git init</li>
+                    <li>git status</li>
+                    <li>git add .</li>
+                    <li>git commit -am "커밋 메세지"</li>
+                    <li>git log</li>
+                    <li>git diff</li>
+                </ul>
+        </div>
+
         <h2 id="web">웹디자인 기능사</h2>
         <div class="box">
             <h3><a href="웹디자인기능사/기출유형문제 04회/20211109/index.html" target="_black">기출유형문제04회</a></h3>
@@ -1937,6 +2001,7 @@
                 <li><a href="#css">CSS</a></li>
                 <li><a href="#JS">JS</a></li>
                 <li><a href="#JQuery">JQuery</a></li>
+                <li><a href="#git">git</a></li>
                 <li><a href="#my">MY</a></li>
             </ul>
         </div>
@@ -1946,6 +2011,7 @@
                 <li><a href="#css">CSS</a></li>
                 <li><a href="#JS">JS</a></li>
                 <li><a href="#JQuery">JQuery</a></li>
+                <li><a href="#git">git</a></li>
                 <li><a href="#my">MY</a>
                     <ul>
                         <li><a href="./02_HTML+CSS/MY/site.html">Site</a></li>

@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* FAST MENU */
+#nameTag{position: fixed; top: 25%; left: 82%;}
+#nameTag ul{list-style: none;}
+#nameTag ul li{writing-mode: vertical-rl; border-radius: 0 15px 15px 0; opacity: .7}
+#nameTag ul li a{padding: 30px 20px; display: block; text-decoration: none; color: #fff}
+#nameTag ul li:hover{opacity: 1}
+#nameTag ul li:hover a{font-weight: 700}
+#nameTag ul li:nth-child(1){background: #f1672a}
+#nameTag ul li:nth-child(2){background: #33a9dc}
+#nameTag ul li:nth-child(3){background: #f7df1e}
+#nameTag ul li:nth-child(4){background: #0868ac}
+#nameTag ul li:nth-child(5){background: #000}
+#nameTag ul li:nth-child(6){background: #000}
+
+
+#postIt{position: fixed; top: 0; right: 0}
+#postIt ul{list-style: none;}
+#postIt ul>li>a{padding: 10px 30px; display: block; text-decoration: none; color: #fff}
+#postIt>ul>li{margin: 2px; position: relative;}
+#postIt>ul>li:nth-child(1){background: #f1672a}
+#postIt>ul>li:nth-child(2){background: #33a9dc}
+#postIt>ul>li:nth-child(3){background: #f7df1e}
+#postIt>ul>li:nth-child(4){background: #0868ac}
+#postIt>ul>li:nth-child(5){background: #000}
+#postIt>ul>li:last-child{background: #000}
+#postIt>ul>li>ul{position: absolute; top: 100%; left: 0; padding: 0; display: none}
+#postIt>ul>li:last-child:hover>ul{display: block}
+#postIt>ul>li>ul li{background: #999}
+/* BOX */
+#html+.box{border-color: #f1672a}
+#css+.box{border-color: #33a9dc}
+#JS+.box{border-color: #f7df1e}
+#JQuery+.box{border-color: #0868ac}
