@@ -1,0 +1,62 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{background: #fff;}
+li{list-style: none;}
+a{color: #333; text-decoration: none;}
+/* color: #48487d; color: #fabd43; */
+#skip{position: absolute; top: 0; left: 0; width: 100%; height: auto; font-size: 0; z-index: 10;}
+#skip ul li{background: #000;}
+#skip ul li a{font-size: 0; display: block; text-align: center;}
+#skip ul li a:focus{padding: 10px 0; font-size: 16px; background: #000; color: #fff;}
+
+#wrap{width: 1000px; height: 700px; margin: 0 auto;}
+#header{width: 100%; height: 100px; background: #fff; display: flex; justify-content: space-between; align-items: center; position: relative;}
+#nav>.bg{width: 100%; position: absolute; top: 100px; left: 0; height: 150px; background: #fabd43; z-index: 4; display: none;}
+/* #nav:hover>.bg{height: 150px;} */
+#nav>ul{display: flex; margin-top: 50px;}
+#nav>ul>li{width: 180px; text-align: center; height: 50px; line-height: 50px; transition: .3s;}
+#nav>ul>li:hover{background: #48487d;}
+#nav>ul>li>a{font-weight: bold; transition: .3s;}
+#nav>ul>li:hover>a{color: #fff;}
+#nav>ul>li>ul{position: absolute; width: 180px; display: none; z-index: 5;}
+#nav>ul>li>ul li{text-align: center; transition: .3s;}
+#nav>ul>li>ul li:hover{background: #fff;}
+#nav>ul>li>ul li a{font-weight: bold; color: rgb(102, 100, 100);}
+#nav>ul>li>ul li:hover a{color: orange;}
+#slide{width: 100%; height: 300px; overflow: hidden;}
+#slide ul{width: 100%; height: 100%; position: relative; top: 0; left: 0;  z-index: 3;}
+#slide ul li{position: absolute; opacity: 0;}
+#slide ul li:first-child{opacity: 1;}
+#contents{width: 100%; height: 200px; background: lightgray; display: flex;}
+#contents>article{width: 33.333%; height: 100%; background: rgb(233, 231, 231); padding: 20px;}
+#contents>article h2{font-size: 14px; padding-bottom: 5px; border-bottom: 1px solid rgb(121, 120, 120);}
+#contents>article:nth-child(1) ul{background: #fff; margin-top: 10px; padding: 10px;}
+#contents>article:nth-child(1) ul li{display: flex; justify-content: space-between; height: 28px; line-height: 28px;}
+#contents>article:nth-child(1) ul li a{display: block; width: 70%; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+#contents>article:nth-child(1) ul li span{display: block; width: 25%; font-size: 12px;}
+#contents>article:nth-child(2){background: #fff;}
+#contents>article:nth-child(2) ul{display: flex; justify-content: space-between; margin-top: 10px;}
+#contents>article:nth-child(2) ul li{width: 32%; text-align: center;}
+#contents>article:nth-child(2) ul li img{width: 100%;}
+#contents>article:nth-child(2) ul li span{font-size: 12px;}
+#contents>article:nth-child(2) ul li span:hover{text-decoration: underline;}
+#contents>article:nth-child(3){width: 33.333%; height: 100%; background: rgb(233, 231, 231);}
+#contents>article:nth-child(3) .shortcut{margin-top: 10px; position: relative;}
+#contents>article:nth-child(3) .shortcut a{display: block;}
+#contents>article:nth-child(3) .shortcut span{position: absolute; width: 150px; height: 50px; background: #48487d; color: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%); line-height: 50px; text-align: center;}
+#contents>article:nth-child(3) .shortcut a img{width: 100%; height: 132px;}
+#footer{width: 100%; height: 100px; background: gray; display: flex; justify-content: space-between; align-items: center; background: #48487d;}
+#footer address{width: 60%; color: #fff; padding-left: 20px;}
+#footer .footer-menu{width: 40%;}
+#footer .footer-menu .top-menu ul{display: flex; padding-bottom: 20px;}
+#footer .footer-menu .top-menu ul li{position: relative;}
+#footer .footer-menu .top-menu ul li:not(:last-child):after{position: absolute; content: ""; width: 1px; height: 10px; background: #ccc; top: 8px; right: 0;}
+#footer .footer-menu .top-menu ul li a{font-size: 12px; padding: 0 5px; color: #ccc;}
+#footer .footer-menu .bottom-menu ul{display: flex; justify-content: space-between; padding-right: 20px;}
+#footer .footer-menu .bottom-menu ul li{border: 1px solid #ccc; padding: 5px;}
+#footer .footer-menu .bottom-menu ul li a{color: #ccc;}
+.pop{position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 999; display: none;}
+.pop .pop-wrap{width: 500px; height: 500px; padding: 50px; background: #fff; box-shadow: 5px 5px 5px #333; top: 50%; left: 50%; transform: translate(-50%, -50%); position: relative;}
+.pop .pop-wrap h3{text-align: center; margin-bottom: 20px;}
+.pop .pop-wrap p{font-size: 14px; line-height: 200%; letter-spacing: -1px;}
+.btn{position: absolute; right: 50px; bottom: 50px;}
