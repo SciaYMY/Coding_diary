@@ -1854,12 +1854,34 @@
                 <ul>
                     <li><a href="03_Javascript+jqurery/03.jquery_effect/13_hover_slide/">hover slide</a>
                         <ul>
+                            <li>.visual{<strong>position: relative</strong>}</li>
+                            <li>.visual>div{<strong>float: left</strong>}</li>
                             <li>$('.section')<strong>.hover( )</strong> </li>
                             <li>function(){ $(this).stop().animate({width: 920, <strong>left: 0</strong>}, 500); $('.visual').stop().animate({<strong>left:</strong> -240}, 500) }</li>
                             <li>function(){ $(this).stop().animate({width: 200}, 500); $('.visual').stop().animate({<strong>left: 0</strong>}, 500) }</li>
                         </ul>
                     </li>
                 </ul>
+            <h3>이미지 확대</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/03.jquery_effect/03.이미지 확대/">Zoom in Image</a>
+                        <ul>
+                            <li>.box > .box1 > a > img</li>
+                            <li>$('.box1>a').hover( )</li>
+                            <li>$(this).find('img').css( <strong>{'transform':'scale(1.2)', 'transition':'.5s'}</strong> )</li>
+                            <li>$(this).find('img').css( {'transform':'scale(1)'} )</li>
+                        </ul>
+                    </li>
+                </ul>
+            <h3>13.이미지 4개 오퍼서티 회전</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/03.jquery_effect/13_이미지4개 오퍼서티 회전/index.html">Images opacity rotation</a>
+                        <ul>
+                            <li>.box > .box1 > a > img</li>
+                        </ul>
+                    </li>
+                </ul>
+                
             </div>
         <h2 id="PJ">Project example</h2>
         <div class="box">
