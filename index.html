@@ -1703,7 +1703,12 @@
                             <li><strong>JSON.parse()</strong> : </li>
                         </ul>
                     </li>
-                    <li><a href="http://yamazy02.dothome.co.kr/map/">Map</a></li>
+                    <li><a href="http://yamazy02.dothome.co.kr/map/">Map</a>
+                        <ul>
+                            <li><a href="https://developers.kakao.com/" target="_black">Kakao Develpers</a> → 플랫폼 등록</li>
+                            <li>지도 중심좌표 찾기?</li>
+                        </ul>
+                    </li>
 
                 </ul>
             <h3>ex08 Imgslider</h3>
@@ -1838,6 +1843,17 @@
                         </ul>
                     </li>
                 </ul>
+            <h3>03.이미지 확대</h3>
+                <ul>
+                    <li><a href="03_Javascript+jqurery/03.jquery_effect/03.이미지 확대/">Zoom in Image</a>
+                        <ul>
+                            <li>.box > .box1 > a > img</li>
+                            <li>$('.box1>a').hover( )</li>
+                            <li>$(this).find('img').css( <strong>{'transform':'scale(1.2)', 'transition':'.5s'}</strong> )</li>
+                            <li>$(this).find('img').css( {'transform':'scale(1)'} )</li>
+                        </ul>
+                    </li>
+                </ul>
             <h3>12.X button</h3>
                 <ul>
                     <li><a href="03_Javascript+jqurery/03.jquery_effect/12.x_button/index.html">x Button</a>
@@ -1862,22 +1878,11 @@
                         </ul>
                     </li>
                 </ul>
-            <h3>이미지 확대</h3>
-                <ul>
-                    <li><a href="03_Javascript+jqurery/03.jquery_effect/03.이미지 확대/">Zoom in Image</a>
-                        <ul>
-                            <li>.box > .box1 > a > img</li>
-                            <li>$('.box1>a').hover( )</li>
-                            <li>$(this).find('img').css( <strong>{'transform':'scale(1.2)', 'transition':'.5s'}</strong> )</li>
-                            <li>$(this).find('img').css( {'transform':'scale(1)'} )</li>
-                        </ul>
-                    </li>
-                </ul>
             <h3>13.이미지 4개 오퍼서티 회전</h3>
                 <ul>
                     <li><a href="03_Javascript+jqurery/03.jquery_effect/13_이미지4개 오퍼서티 회전/index.html">Images opacity rotation</a>
                         <ul>
-                            <li>.box > .box1 > a > img</li>
+                            <li></li>
                         </ul>
                     </li>
                 </ul>
@@ -2010,6 +2015,12 @@
             <h3>Study</h3>
             <ul>
                 <li>팝업 시 뒤에 스크롤 없애기
+                    <ul>
+                        <li class="tag">$('html, body').css({'overflow': 'hidden', 'height': '100%'});</li>
+                        <li>overflow : hidden → auto</li>
+                    </ul>
+                </li>
+                <li>형광펜 효과 Highlight
                     <ul>
                         <li class="tag">$('html, body').css({'overflow': 'hidden', 'height': '100%'});</li>
                         <li>overflow : hidden → auto</li>
