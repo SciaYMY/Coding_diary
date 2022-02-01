@@ -6,6 +6,8 @@
     <style>
         summary{cursor: pointer}
         summary:hover{background: #005ba4; color: #fff}
+        details[open] summary{background: #005ba4; color: #fff}
+        details[open]{background: #ddecff}
     </style>
 </head>
 <body>
@@ -79,24 +81,39 @@
         <ul>
             <li>padding size 수치 차이 (1px)</li>
             <li>image 확장자 .webp &nbsp;⇒ .png, .jpg</li>
-            <li>조건부주석</li>
+            <li>조건부주석 (X)</li>
         </ul>
         <h3>IE 10</h3>
         <ul>
             <li>img 선</li>
+            <li>JS
+                <ul>
+                    <li>pageScroll</li>
+                </ul>
+            </li>
         </ul>
         <h3>IE 9</h3>
         <ul>
+            <li>position : fixed</li>
             <li>iframe 동영상 &nbsp;⇒ a 링크 background 삽입</li>
+            <li>transition: .3s (X)</li>
         </ul>
         <h3>IE 8</h3>
         <ul>
             <li>background-size  &nbsp;⇒ img 삽입 후 크기 조절</li>
             <li>transform : translate(-50%, -50%) &nbsp;⇒ margin: px auto 0 (margin-collapsing)</li>
+            <li>border-radius (X)</li>
             <li>letter-spacing 수치 차이</li>
             <li>color : rgba &nbsp;⇒ rgb (a 인식 못함)</li>
             <li>:last-child &nbsp;⇒ class 명 사용</li>
-            <li>동영상</li>
+            <li>iframe 동영상 &nbsp;⇒ img 삽입</li>
+            <li>image 확장자 .svg (X)</li>
+            <li>JS
+                <ul>
+                    <li>.click() .slideDown,Up()</li>
+                    <li>.click() .toggle()</li>
+                </ul>
+            </li>
         </ul>
         <h3>IE 조건부주석</h3>
         <ul>

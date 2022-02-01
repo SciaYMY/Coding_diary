@@ -2022,8 +2022,9 @@
                 </li>
                 <li>형광펜 효과 Highlight
                     <ul>
-                        <li class="tag">$('html, body').css({'overflow': 'hidden', 'height': '100%'});</li>
-                        <li>overflow : hidden → auto</li>
+                        <li>.highlight{display: inline-block; <strong>position: relative</strong>}</li>
+                        <li>.highlight<strong>:after</strong>{content:''; width: 0; height: 12px; background: #ddecff; <strong>position: absolute; left: 0; bottom: 0; z-index: -1;</strong> transition: .5s}</li>
+                        <li>:hover .hightlight:after{width: 100%}</li>
                     </ul>
                 </li>
             </ul>
